@@ -1,0 +1,1466 @@
+========================================================================================================================
+Running p_visible=0.1, k_sffa=4, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2766 train=18.7683 | params=     4
+kron_lp          | smooth_pinball=20.7776 train=19.1456 | params=     4
+union_lp         | smooth_pinball=20.943 train=19.3663 | params=     4
+dk_lap_poly      | smooth_pinball=18.888 train=17.2456 | params=    16
+rg_alg           | smooth_pinball=17.2367 train=16.0335 | params=    85
+sffa             | smooth_pinball=14.6431 train=13.1607 | params=    85
+num_lmmse        | smooth_pinball=20.0167 train=16.7664 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.0956 train=19.9455 | params=     4
+kron_lp          | smooth_pinball=20.6333 train=19.156 | params=     4
+union_lp         | smooth_pinball=19.7473 train=18.7075 | params=     4
+dk_lap_poly      | smooth_pinball=19.7808 train=18.3481 | params=    16
+rg_alg           | smooth_pinball=19.7856 train=18.0933 | params=    85
+sffa             | smooth_pinball=14.1663 train=12.7855 | params=    85
+num_lmmse        | smooth_pinball=21.2377 train=16.8074 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=18.9508 train=19.2844 | params=     4
+kron_lp          | smooth_pinball=18.8146 train=18.792 | params=     4
+union_lp         | smooth_pinball=17.4481 train=17.0179 | params=     4
+dk_lap_poly      | smooth_pinball=16.0209 train=15.8671 | params=    16
+rg_alg           | smooth_pinball=17.138 train=16.5362 | params=    85
+sffa             | smooth_pinball=13.4343 train=12.5542 | params=    85
+num_lmmse        | smooth_pinball=18.5614 train=16.7293 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.8766 train=19.365 | params=     4
+kron_lp          | smooth_pinball=18.9262 train=18.2214 | params=     4
+union_lp         | smooth_pinball=19.7482 train=19.2165 | params=     4
+dk_lap_poly      | smooth_pinball=18.2703 train=17.2193 | params=    16
+rg_alg           | smooth_pinball=19.7096 train=18.622 | params=    85
+sffa             | smooth_pinball=15.2755 train=13.6227 | params=    85
+num_lmmse        | smooth_pinball=19.3236 train=19.068 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=16.8993 train=17.2947 | params=     4
+kron_lp          | smooth_pinball=16.643 train=17.067 | params=     4
+union_lp         | smooth_pinball=16.7306 train=16.8723 | params=     4
+dk_lap_poly      | smooth_pinball=15.905 train=15.7038 | params=    16
+rg_alg           | smooth_pinball=14.6634 train=14.3113 | params=    85
+sffa             | smooth_pinball=13.2545 train=12.9211 | params=    85
+num_lmmse        | smooth_pinball=21.0829 train=18.2395 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.6842 train=20.7259 | params=     4
+kron_lp          | smooth_pinball=20.541 train=20.675 | params=     4
+union_lp         | smooth_pinball=20.0482 train=19.9004 | params=     4
+dk_lap_poly      | smooth_pinball=19.7493 train=19.7067 | params=    16
+rg_alg           | smooth_pinball=17.5678 train=16.8363 | params=    85
+sffa             | smooth_pinball=14.6858 train=13.5194 | params=    85
+num_lmmse        | smooth_pinball=20.1234 train=18.1611 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5935 train=19.5807 | params=     4
+kron_lp          | smooth_pinball=20.7691 train=19.8069 | params=     4
+union_lp         | smooth_pinball=20.106 train=19.221 | params=     4
+dk_lap_poly      | smooth_pinball=18.9983 train=17.665 | params=    16
+rg_alg           | smooth_pinball=17.7808 train=16.8347 | params=    85
+sffa             | smooth_pinball=14.5609 train=13.0694 | params=    85
+num_lmmse        | smooth_pinball=20.2814 train=16.4494 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3641 train=19.7215 | params=     4
+kron_lp          | smooth_pinball=19.8039 train=19.1145 | params=     4
+union_lp         | smooth_pinball=20.1892 train=19.5418 | params=     4
+dk_lap_poly      | smooth_pinball=19.0522 train=18.1799 | params=    16
+rg_alg           | smooth_pinball=17.9606 train=16.4504 | params=    85
+sffa             | smooth_pinball=15.1186 train=13.0127 | params=    85
+num_lmmse        | smooth_pinball=19.4686 train=16.1711 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=22.3739 train=22.1754 | params=     4
+kron_lp          | smooth_pinball=22.2318 train=22.0141 | params=     4
+union_lp         | smooth_pinball=21.9351 train=21.8016 | params=     4
+dk_lap_poly      | smooth_pinball=20.9636 train=20.466 | params=    16
+rg_alg           | smooth_pinball=21.3995 train=20.9845 | params=    85
+sffa             | smooth_pinball=14.9635 train=13.9487 | params=    85
+num_lmmse        | smooth_pinball=19.5162 train=17.4575 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.1 =====
+N=207 n0=20 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=4 k_sffa=4 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.243 train=19.173 | params=     4
+kron_lp          | smooth_pinball=20.1199 train=18.8541 | params=     4
+union_lp         | smooth_pinball=18.8782 train=17.9368 | params=     4
+dk_lap_poly      | smooth_pinball=19.2531 train=17.842 | params=    16
+rg_alg           | smooth_pinball=16.8459 train=15.9972 | params=    85
+sffa             | smooth_pinball=14.9683 train=13.4357 | params=    85
+num_lmmse        | smooth_pinball=20.982 train=17.5557 | params=   400
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.1 dk_lap_poly      | smooth_pinball_mean=18.6882 std=1.60279 | ok=10/10
+p=0.1 kron_lp          | smooth_pinball_mean=19.926 std=1.51646 | ok=10/10
+p=0.1 num_lmmse        | smooth_pinball_mean=20.0594 std=0.867419 | ok=10/10
+p=0.1 rg_alg           | smooth_pinball_mean=18.0088 std=1.87658 | ok=10/10
+p=0.1 sffa             | smooth_pinball_mean=14.5071 std=0.689188 | ok=10/10
+p=0.1 sub_lp           | smooth_pinball_mean=20.1358 std=1.43256 | ok=10/10
+p=0.1 union_lp         | smooth_pinball_mean=19.5774 std=1.54502 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.2, k_sffa=6, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=22.1451 train=20.594 | params=     4
+kron_lp          | smooth_pinball=21.1057 train=19.2524 | params=     4
+union_lp         | smooth_pinball=20.6134 train=19.1947 | params=     4
+dk_lap_poly      | smooth_pinball=18.719 train=17.4513 | params=    24
+rg_alg           | smooth_pinball=16.1554 train=14.5752 | params=   259
+sffa             | smooth_pinball=14.3175 train=12.1056 | params=   259
+num_lmmse        | smooth_pinball=18.2067 train=15.0026 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.2658 train=20.3549 | params=     4
+kron_lp          | smooth_pinball=20.8929 train=20.1383 | params=     4
+union_lp         | smooth_pinball=20.0301 train=19.5294 | params=     4
+dk_lap_poly      | smooth_pinball=18.8296 train=18.0751 | params=    24
+rg_alg           | smooth_pinball=14.8906 train=14.0048 | params=   259
+sffa             | smooth_pinball=14.553 train=12.3143 | params=   259
+num_lmmse        | smooth_pinball=18.7877 train=15.3776 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4604 train=19.9287 | params=     4
+kron_lp          | smooth_pinball=19.3852 train=18.9041 | params=     4
+union_lp         | smooth_pinball=19.6569 train=18.8557 | params=     4
+dk_lap_poly      | smooth_pinball=17.2462 train=16.3022 | params=    24
+rg_alg           | smooth_pinball=15.8405 train=14.7812 | params=   259
+sffa             | smooth_pinball=13.2026 train=11.8378 | params=   259
+num_lmmse        | smooth_pinball=17.4517 train=14.8468 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=18.5502 train=17.7856 | params=     4
+kron_lp          | smooth_pinball=18.578 train=17.8776 | params=     4
+union_lp         | smooth_pinball=18.7411 train=17.9618 | params=     4
+dk_lap_poly      | smooth_pinball=17.2701 train=16.3245 | params=    24
+rg_alg           | smooth_pinball=15.9057 train=14.5748 | params=   259
+sffa             | smooth_pinball=14.2801 train=12.5449 | params=   259
+num_lmmse        | smooth_pinball=18.0891 train=16.7789 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=18.9011 train=19.0992 | params=     4
+kron_lp          | smooth_pinball=18.6795 train=18.8794 | params=     4
+union_lp         | smooth_pinball=18.4129 train=18.3631 | params=     4
+dk_lap_poly      | smooth_pinball=17.3442 train=17.035 | params=    24
+rg_alg           | smooth_pinball=13.7678 train=13.2639 | params=   259
+sffa             | smooth_pinball=13.4979 train=12.7135 | params=   259
+num_lmmse        | smooth_pinball=18.6603 train=15.7884 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.8791 train=20.3673 | params=     4
+kron_lp          | smooth_pinball=20.7622 train=20.3878 | params=     4
+union_lp         | smooth_pinball=20.4731 train=19.9498 | params=     4
+dk_lap_poly      | smooth_pinball=19.507 train=19.012 | params=    24
+rg_alg           | smooth_pinball=14.519 train=13.014 | params=   259
+sffa             | smooth_pinball=13.9282 train=12.6009 | params=   259
+num_lmmse        | smooth_pinball=18.092 train=16.2849 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.1711 train=20.81 | params=     4
+kron_lp          | smooth_pinball=21.2284 train=20.8435 | params=     4
+union_lp         | smooth_pinball=20.805 train=20.3145 | params=     4
+dk_lap_poly      | smooth_pinball=18.8407 train=18.2563 | params=    24
+rg_alg           | smooth_pinball=14.5885 train=14.0098 | params=   259
+sffa             | smooth_pinball=13.9934 train=12.5825 | params=   259
+num_lmmse        | smooth_pinball=18.0724 train=14.8937 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2307 train=20.4051 | params=     4
+kron_lp          | smooth_pinball=19.3083 train=19.5469 | params=     4
+union_lp         | smooth_pinball=18.8219 train=18.7132 | params=     4
+dk_lap_poly      | smooth_pinball=18.0632 train=17.705 | params=    24
+rg_alg           | smooth_pinball=16.1317 train=14.8941 | params=   259
+sffa             | smooth_pinball=13.7907 train=12.3568 | params=   259
+num_lmmse        | smooth_pinball=17.5875 train=14.4327 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=22.3167 train=21.3073 | params=     4
+kron_lp          | smooth_pinball=22.1256 train=21.1713 | params=     4
+union_lp         | smooth_pinball=22.1695 train=20.9778 | params=     4
+dk_lap_poly      | smooth_pinball=18.8096 train=17.592 | params=    24
+rg_alg           | smooth_pinball=14.5226 train=13.2361 | params=   259
+sffa             | smooth_pinball=14.133 train=12.5233 | params=   259
+num_lmmse        | smooth_pinball=16.612 train=14.9383 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.2 =====
+N=207 n0=41 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=6 k_sffa=6 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.005 train=19.4104 | params=     4
+kron_lp          | smooth_pinball=21.0346 train=19.4968 | params=     4
+union_lp         | smooth_pinball=20.4986 train=19.1044 | params=     4
+dk_lap_poly      | smooth_pinball=18.5124 train=16.7611 | params=    24
+rg_alg           | smooth_pinball=14.3762 train=13.4702 | params=   259
+sffa             | smooth_pinball=14.0271 train=12.3976 | params=   259
+num_lmmse        | smooth_pinball=19.8618 train=15.5247 | params=  1681
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.2 dk_lap_poly      | smooth_pinball_mean=18.3142 std=0.792254 | ok=10/10
+p=0.2 kron_lp          | smooth_pinball_mean=20.31 std=1.21833 | ok=10/10
+p=0.2 num_lmmse        | smooth_pinball_mean=18.1421 std=0.868112 | ok=10/10
+p=0.2 rg_alg           | smooth_pinball_mean=15.0698 std=0.859056 | ok=10/10
+p=0.2 sffa             | smooth_pinball_mean=13.9724 std=0.399003 | ok=10/10
+p=0.2 sub_lp           | smooth_pinball_mean=20.6925 std=1.22492 | ok=10/10
+p=0.2 union_lp         | smooth_pinball_mean=20.0223 std=1.14545 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.3, k_sffa=7, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=22.061 train=20.814 | params=     4
+kron_lp          | smooth_pinball=21.529 train=20.0139 | params=     4
+union_lp         | smooth_pinball=20.8992 train=19.5983 | params=     4
+dk_lap_poly      | smooth_pinball=18.0016 train=16.7425 | params=    28
+rg_alg           | smooth_pinball=15.7076 train=14.3588 | params=   400
+sffa             | smooth_pinball=13.7068 train=11.9477 | params=   400
+num_lmmse        | smooth_pinball=16.3982 train=14.1772 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.2767 train=20.4155 | params=     4
+kron_lp          | smooth_pinball=21.1446 train=20.3953 | params=     4
+union_lp         | smooth_pinball=20.2126 train=19.4575 | params=     4
+dk_lap_poly      | smooth_pinball=17.4588 train=16.5934 | params=    28
+rg_alg           | smooth_pinball=14.3767 train=13.3781 | params=   400
+sffa             | smooth_pinball=14.1576 train=12.3715 | params=   400
+num_lmmse        | smooth_pinball=16.798 train=13.9524 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.8172 train=19.5076 | params=     4
+kron_lp          | smooth_pinball=19.466 train=19.1281 | params=     4
+union_lp         | smooth_pinball=19.0262 train=18.5458 | params=     4
+dk_lap_poly      | smooth_pinball=17.3011 train=16.4196 | params=    28
+rg_alg           | smooth_pinball=14.8551 train=13.9412 | params=   400
+sffa             | smooth_pinball=13.1495 train=12.0678 | params=   400
+num_lmmse        | smooth_pinball=16.7468 train=13.9412 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.2153 train=18.7693 | params=     4
+kron_lp          | smooth_pinball=19.1227 train=18.7357 | params=     4
+union_lp         | smooth_pinball=18.7912 train=18.3156 | params=     4
+dk_lap_poly      | smooth_pinball=17.3497 train=16.6248 | params=    28
+rg_alg           | smooth_pinball=14.6373 train=13.5547 | params=   400
+sffa             | smooth_pinball=13.8153 train=12.533 | params=   400
+num_lmmse        | smooth_pinball=17.3549 train=15.623 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.2826 train=19.3613 | params=     4
+kron_lp          | smooth_pinball=19.17 train=19.2838 | params=     4
+union_lp         | smooth_pinball=18.8269 train=18.8759 | params=     4
+dk_lap_poly      | smooth_pinball=17.5562 train=17.1062 | params=    28
+rg_alg           | smooth_pinball=13.1857 train=12.69 | params=   400
+sffa             | smooth_pinball=12.9422 train=12.1266 | params=   400
+num_lmmse        | smooth_pinball=15.6984 train=13.7287 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.7614 train=20.6186 | params=     4
+kron_lp          | smooth_pinball=20.6282 train=20.5342 | params=     4
+union_lp         | smooth_pinball=20.3842 train=20.0751 | params=     4
+dk_lap_poly      | smooth_pinball=18.8739 train=18.173 | params=    28
+rg_alg           | smooth_pinball=13.9316 train=13.1672 | params=   400
+sffa             | smooth_pinball=13.5874 train=12.3162 | params=   400
+num_lmmse        | smooth_pinball=17.0484 train=14.7386 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.6053 train=21.0163 | params=     4
+kron_lp          | smooth_pinball=21.3513 train=20.8578 | params=     4
+union_lp         | smooth_pinball=20.4911 train=19.8363 | params=     4
+dk_lap_poly      | smooth_pinball=18.7593 train=17.8619 | params=    28
+rg_alg           | smooth_pinball=14.7278 train=14.0467 | params=   400
+sffa             | smooth_pinball=13.3919 train=12.0933 | params=   400
+num_lmmse        | smooth_pinball=15.3247 train=13.6826 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.9634 train=19.7284 | params=     4
+kron_lp          | smooth_pinball=19.5872 train=19.381 | params=     4
+union_lp         | smooth_pinball=19.2017 train=18.562 | params=     4
+dk_lap_poly      | smooth_pinball=18.7863 train=18.1381 | params=    28
+rg_alg           | smooth_pinball=15.0924 train=13.7866 | params=   400
+sffa             | smooth_pinball=13.6602 train=12.2125 | params=   400
+num_lmmse        | smooth_pinball=16.8786 train=13.7227 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.4818 train=20.6833 | params=     4
+kron_lp          | smooth_pinball=21.1768 train=20.431 | params=     4
+union_lp         | smooth_pinball=21.1961 train=20.4114 | params=     4
+dk_lap_poly      | smooth_pinball=20.0991 train=19.1429 | params=    28
+rg_alg           | smooth_pinball=14.0756 train=13.0172 | params=   400
+sffa             | smooth_pinball=13.579 train=12.0524 | params=   400
+num_lmmse        | smooth_pinball=16.0859 train=14.0028 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=7 k_sffa=7 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2996 train=18.9503 | params=     4
+kron_lp          | smooth_pinball=20.6573 train=19.1641 | params=     4
+union_lp         | smooth_pinball=20.1499 train=18.5446 | params=     4
+dk_lap_poly      | smooth_pinball=18.2465 train=16.6523 | params=    28
+rg_alg           | smooth_pinball=14.9573 train=13.2254 | params=   400
+sffa             | smooth_pinball=13.8443 train=12.2724 | params=   400
+num_lmmse        | smooth_pinball=17.4202 train=14.39 | params=  3844
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.3 dk_lap_poly      | smooth_pinball_mean=18.2433 std=0.896594 | ok=10/10
+p=0.3 kron_lp          | smooth_pinball_mean=20.3833 std=0.950454 | ok=10/10
+p=0.3 num_lmmse        | smooth_pinball_mean=16.5754 std=0.692854 | ok=10/10
+p=0.3 rg_alg           | smooth_pinball_mean=14.5547 std=0.701668 | ok=10/10
+p=0.3 sffa             | smooth_pinball_mean=13.5834 std=0.351005 | ok=10/10
+p=0.3 sub_lp           | smooth_pinball_mean=20.5764 std=1.00899 | ok=10/10
+p=0.3 union_lp         | smooth_pinball_mean=19.9179 std=0.885153 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.4, k_sffa=8, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.7254 train=21.1087 | params=     4
+kron_lp          | smooth_pinball=21.3045 train=20.6631 | params=     4
+union_lp         | smooth_pinball=20.1909 train=19.2954 | params=     4
+dk_lap_poly      | smooth_pinball=19.1062 train=18.1283 | params=    32
+rg_alg           | smooth_pinball=14.3089 train=12.9712 | params=   585
+sffa             | smooth_pinball=13.172 train=11.5882 | params=   585
+num_lmmse        | smooth_pinball=15.302 train=13.3339 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.9155 train=20.113 | params=     4
+kron_lp          | smooth_pinball=20.7571 train=20.0143 | params=     4
+union_lp         | smooth_pinball=20.3579 train=19.7315 | params=     4
+dk_lap_poly      | smooth_pinball=18.1706 train=17.2645 | params=    32
+rg_alg           | smooth_pinball=14.9776 train=13.5892 | params=   585
+sffa             | smooth_pinball=13.2396 train=12.0002 | params=   585
+num_lmmse        | smooth_pinball=15.2631 train=13.1373 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.6746 train=19.2754 | params=     4
+kron_lp          | smooth_pinball=19.6349 train=19.2715 | params=     4
+union_lp         | smooth_pinball=19.1819 train=18.7427 | params=     4
+dk_lap_poly      | smooth_pinball=17.1899 train=16.439 | params=    32
+rg_alg           | smooth_pinball=13.9077 train=12.8238 | params=   585
+sffa             | smooth_pinball=12.8541 train=11.7197 | params=   585
+num_lmmse        | smooth_pinball=14.9301 train=12.9862 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.3959 train=18.9703 | params=     4
+kron_lp          | smooth_pinball=19.261 train=18.7965 | params=     4
+union_lp         | smooth_pinball=18.5699 train=17.8743 | params=     4
+dk_lap_poly      | smooth_pinball=16.7704 train=16.0085 | params=    32
+rg_alg           | smooth_pinball=14.7467 train=13.5284 | params=   585
+sffa             | smooth_pinball=13.7216 train=12.3351 | params=   585
+num_lmmse        | smooth_pinball=16.0308 train=13.8814 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2506 train=20.1728 | params=     4
+kron_lp          | smooth_pinball=20.1595 train=20.0838 | params=     4
+union_lp         | smooth_pinball=19.2196 train=18.9576 | params=     4
+dk_lap_poly      | smooth_pinball=17.6194 train=17.202 | params=    32
+rg_alg           | smooth_pinball=13.571 train=12.6124 | params=   585
+sffa             | smooth_pinball=12.9955 train=11.9564 | params=   585
+num_lmmse        | smooth_pinball=14.657 train=13.1421 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2457 train=20.162 | params=     4
+kron_lp          | smooth_pinball=20.1801 train=20.1347 | params=     4
+union_lp         | smooth_pinball=19.2114 train=18.7191 | params=     4
+dk_lap_poly      | smooth_pinball=17.2953 train=16.7146 | params=    32
+rg_alg           | smooth_pinball=14.0871 train=13.214 | params=   585
+sffa             | smooth_pinball=13.3099 train=11.9354 | params=   585
+num_lmmse        | smooth_pinball=15.6965 train=13.9122 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.3219 train=20.682 | params=     4
+kron_lp          | smooth_pinball=21.0507 train=20.5016 | params=     4
+union_lp         | smooth_pinball=20.0294 train=19.2965 | params=     4
+dk_lap_poly      | smooth_pinball=18.4751 train=17.5044 | params=    32
+rg_alg           | smooth_pinball=14.806 train=13.5124 | params=   585
+sffa             | smooth_pinball=13.0432 train=11.6847 | params=   585
+num_lmmse        | smooth_pinball=14.5483 train=13.0771 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5495 train=20.2227 | params=     4
+kron_lp          | smooth_pinball=20.3134 train=20.0322 | params=     4
+union_lp         | smooth_pinball=19.0765 train=18.3242 | params=     4
+dk_lap_poly      | smooth_pinball=18.1939 train=17.3879 | params=    32
+rg_alg           | smooth_pinball=14.6422 train=13.7954 | params=   585
+sffa             | smooth_pinball=13.3991 train=11.8868 | params=   585
+num_lmmse        | smooth_pinball=15.9392 train=13.1534 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.0038 train=20.2805 | params=     4
+kron_lp          | smooth_pinball=20.8413 train=20.0676 | params=     4
+union_lp         | smooth_pinball=20.4907 train=19.7007 | params=     4
+dk_lap_poly      | smooth_pinball=18.8923 train=18.0286 | params=    32
+rg_alg           | smooth_pinball=13.7974 train=12.5698 | params=   585
+sffa             | smooth_pinball=13.5791 train=11.8184 | params=   585
+num_lmmse        | smooth_pinball=15.6669 train=13.5041 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.4 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=8 k_sffa=8 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4108 train=19.2766 | params=     4
+kron_lp          | smooth_pinball=20.5844 train=19.4502 | params=     4
+union_lp         | smooth_pinball=19.2438 train=17.7769 | params=     4
+dk_lap_poly      | smooth_pinball=18.1294 train=16.6045 | params=    32
+rg_alg           | smooth_pinball=14.922 train=13.3953 | params=   585
+sffa             | smooth_pinball=13.5899 train=11.7717 | params=   585
+num_lmmse        | smooth_pinball=15.7083 train=13.3125 | params=  6724
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.4 dk_lap_poly      | smooth_pinball_mean=17.9842 std=0.755456 | ok=10/10
+p=0.4 kron_lp          | smooth_pinball_mean=20.4087 std=0.631891 | ok=10/10
+p=0.4 num_lmmse        | smooth_pinball_mean=15.3742 std=0.523106 | ok=10/10
+p=0.4 rg_alg           | smooth_pinball_mean=14.3767 std=0.510263 | ok=10/10
+p=0.4 sffa             | smooth_pinball_mean=13.2904 std=0.284066 | ok=10/10
+p=0.4 sub_lp           | smooth_pinball_mean=20.5494 std=0.71623 | ok=10/10
+p=0.4 union_lp         | smooth_pinball_mean=19.5572 std=0.651119 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.5, k_sffa=9, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.1567 train=20.4849 | params=     4
+kron_lp          | smooth_pinball=20.9874 train=20.3055 | params=     4
+union_lp         | smooth_pinball=19.6812 train=18.7246 | params=     4
+dk_lap_poly      | smooth_pinball=18.2488 train=17.2647 | params=    36
+rg_alg           | smooth_pinball=14.4633 train=13.1607 | params=   820
+sffa             | smooth_pinball=12.9905 train=11.4161 | params=   820
+num_lmmse        | smooth_pinball=14.2731 train=12.4152 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.1624 train=19.6432 | params=     4
+kron_lp          | smooth_pinball=20.0362 train=19.5503 | params=     4
+union_lp         | smooth_pinball=18.9963 train=18.3203 | params=     4
+dk_lap_poly      | smooth_pinball=17.414 train=16.7912 | params=    36
+rg_alg           | smooth_pinball=14.0944 train=12.5432 | params=   820
+sffa             | smooth_pinball=13.1301 train=11.5535 | params=   820
+num_lmmse        | smooth_pinball=14.1438 train=12.3513 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.8765 train=19.6463 | params=     4
+kron_lp          | smooth_pinball=19.7545 train=19.5604 | params=     4
+union_lp         | smooth_pinball=18.8087 train=18.5041 | params=     4
+dk_lap_poly      | smooth_pinball=16.5854 train=15.8978 | params=    36
+rg_alg           | smooth_pinball=14.289 train=13.1609 | params=   820
+sffa             | smooth_pinball=12.7905 train=11.54 | params=   820
+num_lmmse        | smooth_pinball=14.4225 train=12.5878 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.7053 train=18.9521 | params=     4
+kron_lp          | smooth_pinball=19.7131 train=18.995 | params=     4
+union_lp         | smooth_pinball=18.9346 train=18.0909 | params=     4
+dk_lap_poly      | smooth_pinball=16.6919 train=15.6532 | params=    36
+rg_alg           | smooth_pinball=14.8466 train=13.5384 | params=   820
+sffa             | smooth_pinball=13.5213 train=11.8965 | params=   820
+num_lmmse        | smooth_pinball=14.6899 train=12.9286 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5778 train=20.2106 | params=     4
+kron_lp          | smooth_pinball=20.3928 train=20.034 | params=     4
+union_lp         | smooth_pinball=19.6259 train=19.1142 | params=     4
+dk_lap_poly      | smooth_pinball=16.9894 train=16.2488 | params=    36
+rg_alg           | smooth_pinball=14.0269 train=13.1687 | params=   820
+sffa             | smooth_pinball=13.1537 train=11.5995 | params=   820
+num_lmmse        | smooth_pinball=14.2756 train=12.6097 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.8917 train=20.6833 | params=     4
+kron_lp          | smooth_pinball=20.794 train=20.6332 | params=     4
+union_lp         | smooth_pinball=19.8932 train=19.2079 | params=     4
+dk_lap_poly      | smooth_pinball=17.0442 train=16.3823 | params=    36
+rg_alg           | smooth_pinball=14.3939 train=13.2619 | params=   820
+sffa             | smooth_pinball=13.1724 train=11.5333 | params=   820
+num_lmmse        | smooth_pinball=15.6061 train=13.2048 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5426 train=19.9112 | params=     4
+kron_lp          | smooth_pinball=20.3514 train=19.7617 | params=     4
+union_lp         | smooth_pinball=19.5538 train=18.6789 | params=     4
+dk_lap_poly      | smooth_pinball=17.9118 train=17.073 | params=    36
+rg_alg           | smooth_pinball=13.5955 train=12.7629 | params=   820
+sffa             | smooth_pinball=12.7871 train=11.2882 | params=   820
+num_lmmse        | smooth_pinball=13.8401 train=12.4259 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.7449 train=20.3104 | params=     4
+kron_lp          | smooth_pinball=20.5185 train=20.0624 | params=     4
+union_lp         | smooth_pinball=19.6157 train=19.0253 | params=     4
+dk_lap_poly      | smooth_pinball=17.1757 train=16.448 | params=    36
+rg_alg           | smooth_pinball=13.9748 train=13.0543 | params=   820
+sffa             | smooth_pinball=13.46 train=11.8925 | params=   820
+num_lmmse        | smooth_pinball=15.0466 train=12.7353 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=21.215 train=20.4579 | params=     4
+kron_lp          | smooth_pinball=21.0981 train=20.3596 | params=     4
+union_lp         | smooth_pinball=20.3702 train=19.4492 | params=     4
+dk_lap_poly      | smooth_pinball=18.009 train=17.0506 | params=    36
+rg_alg           | smooth_pinball=14.3134 train=13.0071 | params=   820
+sffa             | smooth_pinball=13.2966 train=11.5408 | params=   820
+num_lmmse        | smooth_pinball=15.2162 train=12.8168 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.5 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=9 k_sffa=9 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.06 train=19.1033 | params=     4
+kron_lp          | smooth_pinball=20.339 train=19.3786 | params=     4
+union_lp         | smooth_pinball=19.2074 train=18.0267 | params=     4
+dk_lap_poly      | smooth_pinball=17.4397 train=16.0938 | params=    36
+rg_alg           | smooth_pinball=14.2915 train=12.9034 | params=   820
+sffa             | smooth_pinball=13.3241 train=11.3598 | params=   820
+num_lmmse        | smooth_pinball=14.6053 train=12.6652 | params= 10609
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.5 dk_lap_poly      | smooth_pinball_mean=17.351 std=0.561884 | ok=10/10
+p=0.5 kron_lp          | smooth_pinball_mean=20.3985 std=0.474779 | ok=10/10
+p=0.5 num_lmmse        | smooth_pinball_mean=14.6119 std=0.540285 | ok=10/10
+p=0.5 rg_alg           | smooth_pinball_mean=14.2289 std=0.333842 | ok=10/10
+p=0.5 sffa             | smooth_pinball_mean=13.1626 std=0.251979 | ok=10/10
+p=0.5 sub_lp           | smooth_pinball_mean=20.4933 std=0.526108 | ok=10/10
+p=0.5 union_lp         | smooth_pinball_mean=19.4687 std=0.4835 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.6, k_sffa=10, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5335 train=19.9132 | params=     4
+kron_lp          | smooth_pinball=20.5841 train=19.9586 | params=     4
+union_lp         | smooth_pinball=19.6588 train=18.9446 | params=     4
+dk_lap_poly      | smooth_pinball=17.6396 train=16.8345 | params=    40
+rg_alg           | smooth_pinball=14.4233 train=13.1324 | params=  1111
+sffa             | smooth_pinball=13.0588 train=11.4247 | params=  1111
+num_lmmse        | smooth_pinball=13.5814 train=12.0955 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3698 train=19.7929 | params=     4
+kron_lp          | smooth_pinball=20.3129 train=19.7439 | params=     4
+union_lp         | smooth_pinball=19.3381 train=18.74 | params=     4
+dk_lap_poly      | smooth_pinball=17.2736 train=16.5787 | params=    40
+rg_alg           | smooth_pinball=13.6111 train=12.7726 | params=  1111
+sffa             | smooth_pinball=12.8602 train=11.3485 | params=  1111
+num_lmmse        | smooth_pinball=13.7651 train=12.0021 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.4515 train=19.1727 | params=     4
+kron_lp          | smooth_pinball=19.4387 train=19.1751 | params=     4
+union_lp         | smooth_pinball=18.3595 train=18.0731 | params=     4
+dk_lap_poly      | smooth_pinball=16.0377 train=15.3653 | params=    40
+rg_alg           | smooth_pinball=13.7819 train=12.8053 | params=  1111
+sffa             | smooth_pinball=12.5039 train=11.2653 | params=  1111
+num_lmmse        | smooth_pinball=13.726 train=11.7784 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.6503 train=18.9352 | params=     4
+kron_lp          | smooth_pinball=19.6528 train=19.0043 | params=     4
+union_lp         | smooth_pinball=18.8786 train=18.2024 | params=     4
+dk_lap_poly      | smooth_pinball=16.6148 train=15.6582 | params=    40
+rg_alg           | smooth_pinball=14.4129 train=13.2767 | params=  1111
+sffa             | smooth_pinball=13.1621 train=11.5805 | params=  1111
+num_lmmse        | smooth_pinball=13.6692 train=12.0745 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3982 train=20.0389 | params=     4
+kron_lp          | smooth_pinball=20.2372 train=19.8952 | params=     4
+union_lp         | smooth_pinball=19.4908 train=19.1084 | params=     4
+dk_lap_poly      | smooth_pinball=16.8686 train=16.1411 | params=    40
+rg_alg           | smooth_pinball=13.2648 train=12.6973 | params=  1111
+sffa             | smooth_pinball=12.759 train=11.3706 | params=  1111
+num_lmmse        | smooth_pinball=13.5453 train=12.0866 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.9933 train=20.6601 | params=     4
+kron_lp          | smooth_pinball=20.9178 train=20.6138 | params=     4
+union_lp         | smooth_pinball=20.0512 train=19.5412 | params=     4
+dk_lap_poly      | smooth_pinball=17.3975 train=16.6432 | params=    40
+rg_alg           | smooth_pinball=13.9945 train=13.1764 | params=  1111
+sffa             | smooth_pinball=12.8868 train=11.3686 | params=  1111
+num_lmmse        | smooth_pinball=14.6498 train=12.6868 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.6157 train=19.9927 | params=     4
+kron_lp          | smooth_pinball=20.4565 train=19.858 | params=     4
+union_lp         | smooth_pinball=19.643 train=19.0043 | params=     4
+dk_lap_poly      | smooth_pinball=17.2234 train=16.2794 | params=    40
+rg_alg           | smooth_pinball=14.3206 train=13.336 | params=  1111
+sffa             | smooth_pinball=12.8684 train=11.3982 | params=  1111
+num_lmmse        | smooth_pinball=13.919 train=12.1753 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5221 train=19.9779 | params=     4
+kron_lp          | smooth_pinball=20.4329 train=19.9048 | params=     4
+union_lp         | smooth_pinball=19.5593 train=19.1272 | params=     4
+dk_lap_poly      | smooth_pinball=16.7726 train=16.0312 | params=    40
+rg_alg           | smooth_pinball=14.2327 train=13.0772 | params=  1111
+sffa             | smooth_pinball=13.2109 train=11.6068 | params=  1111
+num_lmmse        | smooth_pinball=14.1452 train=12.2914 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3989 train=19.8249 | params=     4
+kron_lp          | smooth_pinball=20.2426 train=19.6878 | params=     4
+union_lp         | smooth_pinball=19.6061 train=19.0195 | params=     4
+dk_lap_poly      | smooth_pinball=17.2267 train=16.4586 | params=    40
+rg_alg           | smooth_pinball=14.5604 train=13.0345 | params=  1111
+sffa             | smooth_pinball=13.1368 train=11.4172 | params=  1111
+num_lmmse        | smooth_pinball=14.7649 train=12.4059 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.6 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=10 k_sffa=10 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4439 train=19.3769 | params=     4
+kron_lp          | smooth_pinball=20.5591 train=19.456 | params=     4
+union_lp         | smooth_pinball=19.6224 train=18.6098 | params=     4
+dk_lap_poly      | smooth_pinball=17.5203 train=16.1646 | params=    40
+rg_alg           | smooth_pinball=15.0463 train=13.3709 | params=  1111
+sffa             | smooth_pinball=13.6842 train=11.5085 | params=  1111
+num_lmmse        | smooth_pinball=14.302 train=12.5715 | params= 15376
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.6 dk_lap_poly      | smooth_pinball_mean=17.0575 std=0.485833 | ok=10/10
+p=0.6 kron_lp          | smooth_pinball_mean=20.2835 std=0.439316 | ok=10/10
+p=0.6 num_lmmse        | smooth_pinball_mean=14.0068 std=0.440615 | ok=10/10
+p=0.6 rg_alg           | smooth_pinball_mean=14.1648 std=0.514565 | ok=10/10
+p=0.6 sffa             | smooth_pinball_mean=13.0131 std=0.318527 | ok=10/10
+p=0.6 sub_lp           | smooth_pinball_mean=20.3377 std=0.454241 | ok=10/10
+p=0.6 union_lp         | smooth_pinball_mean=19.4208 std=0.474897 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.7, k_sffa=11, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4225 train=19.8193 | params=     4
+kron_lp          | smooth_pinball=20.4519 train=19.8285 | params=     4
+union_lp         | smooth_pinball=19.5243 train=18.9908 | params=     4
+dk_lap_poly      | smooth_pinball=16.7878 train=15.8476 | params=    44
+rg_alg           | smooth_pinball=14.5153 train=13.3658 | params=  1464
+sffa             | smooth_pinball=12.9792 train=11.2258 | params=  1464
+num_lmmse        | smooth_pinball=13.2475 train=11.7813 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.87 train=20.2974 | params=     4
+kron_lp          | smooth_pinball=20.8131 train=20.2672 | params=     4
+union_lp         | smooth_pinball=19.7823 train=19.3132 | params=     4
+dk_lap_poly      | smooth_pinball=17.2024 train=16.3732 | params=    44
+rg_alg           | smooth_pinball=13.5247 train=12.6167 | params=  1464
+sffa             | smooth_pinball=12.9359 train=11.2506 | params=  1464
+num_lmmse        | smooth_pinball=13.5733 train=11.7079 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=19.853 train=19.3925 | params=     4
+kron_lp          | smooth_pinball=19.8379 train=19.3775 | params=     4
+union_lp         | smooth_pinball=18.7505 train=18.375 | params=     4
+dk_lap_poly      | smooth_pinball=16.4773 train=15.7115 | params=    44
+rg_alg           | smooth_pinball=14.0778 train=12.4841 | params=  1464
+sffa             | smooth_pinball=12.3115 train=11.0731 | params=  1464
+num_lmmse        | smooth_pinball=13.5994 train=11.519 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5364 train=19.6101 | params=     4
+kron_lp          | smooth_pinball=20.5556 train=19.6741 | params=     4
+union_lp         | smooth_pinball=19.4387 train=18.6687 | params=     4
+dk_lap_poly      | smooth_pinball=16.9792 train=15.7766 | params=    44
+rg_alg           | smooth_pinball=13.8902 train=12.7412 | params=  1464
+sffa             | smooth_pinball=13.4978 train=11.4871 | params=  1464
+num_lmmse        | smooth_pinball=13.3998 train=11.7977 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.6397 train=20.321 | params=     4
+kron_lp          | smooth_pinball=20.4871 train=20.1851 | params=     4
+union_lp         | smooth_pinball=19.6146 train=19.3093 | params=     4
+dk_lap_poly      | smooth_pinball=16.9426 train=16.2498 | params=    44
+rg_alg           | smooth_pinball=13.7714 train=12.8299 | params=  1464
+sffa             | smooth_pinball=12.7907 train=11.3907 | params=  1464
+num_lmmse        | smooth_pinball=13.3428 train=11.8723 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.9679 train=20.4446 | params=     4
+kron_lp          | smooth_pinball=20.8938 train=20.3977 | params=     4
+union_lp         | smooth_pinball=20.057 train=19.4925 | params=     4
+dk_lap_poly      | smooth_pinball=17.4075 train=16.5242 | params=    44
+rg_alg           | smooth_pinball=13.9911 train=13.0701 | params=  1464
+sffa             | smooth_pinball=12.8803 train=11.4499 | params=  1464
+num_lmmse        | smooth_pinball=14.3669 train=12.3749 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.6417 train=19.9329 | params=     4
+kron_lp          | smooth_pinball=20.5656 train=19.8848 | params=     4
+union_lp         | smooth_pinball=19.6748 train=19.0293 | params=     4
+dk_lap_poly      | smooth_pinball=17.0721 train=16.0973 | params=    44
+rg_alg           | smooth_pinball=13.7799 train=12.8221 | params=  1464
+sffa             | smooth_pinball=12.8347 train=11.315 | params=  1464
+num_lmmse        | smooth_pinball=13.5602 train=11.9344 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.6819 train=19.912 | params=     4
+kron_lp          | smooth_pinball=20.5911 train=19.8253 | params=     4
+union_lp         | smooth_pinball=19.636 train=19.0307 | params=     4
+dk_lap_poly      | smooth_pinball=17.3302 train=16.3177 | params=    44
+rg_alg           | smooth_pinball=14.2156 train=13.0775 | params=  1464
+sffa             | smooth_pinball=12.9521 train=11.3451 | params=  1464
+num_lmmse        | smooth_pinball=13.6886 train=11.7838 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4139 train=19.8123 | params=     4
+kron_lp          | smooth_pinball=20.2933 train=19.6994 | params=     4
+union_lp         | smooth_pinball=19.5931 train=19.026 | params=     4
+dk_lap_poly      | smooth_pinball=17.1467 train=16.385 | params=    44
+rg_alg           | smooth_pinball=14.2287 train=12.7941 | params=  1464
+sffa             | smooth_pinball=12.9936 train=11.2412 | params=  1464
+num_lmmse        | smooth_pinball=13.8333 train=11.9169 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.7 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=11 k_sffa=11 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.0813 train=19.2396 | params=     4
+kron_lp          | smooth_pinball=20.1922 train=19.3176 | params=     4
+union_lp         | smooth_pinball=19.289 train=18.5762 | params=     4
+dk_lap_poly      | smooth_pinball=16.9186 train=15.8215 | params=    44
+rg_alg           | smooth_pinball=14.487 train=12.792 | params=  1464
+sffa             | smooth_pinball=13.5686 train=11.4356 | params=  1464
+num_lmmse        | smooth_pinball=13.9526 train=12.2196 | params= 20736
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.7 dk_lap_poly      | smooth_pinball_mean=17.0264 std=0.271669 | ok=10/10
+p=0.7 kron_lp          | smooth_pinball_mean=20.4682 std=0.304961 | ok=10/10
+p=0.7 num_lmmse        | smooth_pinball_mean=13.6564 std=0.329248 | ok=10/10
+p=0.7 rg_alg           | smooth_pinball_mean=14.0482 std=0.32025 | ok=10/10
+p=0.7 sffa             | smooth_pinball_mean=12.9744 std=0.354489 | ok=10/10
+p=0.7 sub_lp           | smooth_pinball_mean=20.5108 std=0.339277 | ok=10/10
+p=0.7 union_lp         | smooth_pinball_mean=19.536 std=0.342942 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.8, k_sffa=12, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5436 train=19.9727 | params=     4
+kron_lp          | smooth_pinball=20.5702 train=19.9852 | params=     4
+union_lp         | smooth_pinball=19.5452 train=19.0657 | params=     4
+dk_lap_poly      | smooth_pinball=16.9051 train=16.0791 | params=    48
+rg_alg           | smooth_pinball=14.7299 train=13.2188 | params=  1885
+sffa             | smooth_pinball=12.9625 train=11.3644 | params=  1885
+num_lmmse        | smooth_pinball=13.1101 train=11.599 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.7415 train=20.0403 | params=     4
+kron_lp          | smooth_pinball=20.693 train=20.019 | params=     4
+union_lp         | smooth_pinball=19.7187 train=19.107 | params=     4
+dk_lap_poly      | smooth_pinball=17.3447 train=16.4103 | params=    48
+rg_alg           | smooth_pinball=14.1862 train=13.0979 | params=  1885
+sffa             | smooth_pinball=12.8835 train=11.2735 | params=  1885
+num_lmmse        | smooth_pinball=13.0696 train=11.5219 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2725 train=19.6954 | params=     4
+kron_lp          | smooth_pinball=20.2021 train=19.629 | params=     4
+union_lp         | smooth_pinball=19.1839 train=18.7141 | params=     4
+dk_lap_poly      | smooth_pinball=16.894 train=16.1795 | params=    48
+rg_alg           | smooth_pinball=13.6977 train=12.7556 | params=  1885
+sffa             | smooth_pinball=12.4681 train=11.1975 | params=  1885
+num_lmmse        | smooth_pinball=13.5191 train=11.4084 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4417 train=19.6416 | params=     4
+kron_lp          | smooth_pinball=20.4369 train=19.6647 | params=     4
+union_lp         | smooth_pinball=19.3934 train=18.7439 | params=     4
+dk_lap_poly      | smooth_pinball=16.9459 train=15.8727 | params=    48
+rg_alg           | smooth_pinball=13.5939 train=12.5536 | params=  1885
+sffa             | smooth_pinball=12.9497 train=11.3421 | params=  1885
+num_lmmse        | smooth_pinball=13.0835 train=11.4781 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4231 train=19.9734 | params=     4
+kron_lp          | smooth_pinball=20.3163 train=19.887 | params=     4
+union_lp         | smooth_pinball=19.3541 train=18.9737 | params=     4
+dk_lap_poly      | smooth_pinball=16.7592 train=16.0035 | params=    48
+rg_alg           | smooth_pinball=13.8338 train=12.6055 | params=  1885
+sffa             | smooth_pinball=12.8475 train=11.383 | params=  1885
+num_lmmse        | smooth_pinball=12.8732 train=11.51 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.665 train=20.0505 | params=     4
+kron_lp          | smooth_pinball=20.6468 train=20.0406 | params=     4
+union_lp         | smooth_pinball=19.6918 train=19.127 | params=     4
+dk_lap_poly      | smooth_pinball=17.1474 train=16.2703 | params=    48
+rg_alg           | smooth_pinball=13.8427 train=12.8046 | params=  1885
+sffa             | smooth_pinball=12.8421 train=11.3257 | params=  1885
+num_lmmse        | smooth_pinball=13.2217 train=11.6298 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5663 train=19.8409 | params=     4
+kron_lp          | smooth_pinball=20.5034 train=19.7968 | params=     4
+union_lp         | smooth_pinball=19.5821 train=18.9351 | params=     4
+dk_lap_poly      | smooth_pinball=17.0153 train=16.0124 | params=    48
+rg_alg           | smooth_pinball=13.6503 train=12.5588 | params=  1885
+sffa             | smooth_pinball=12.798 train=11.2768 | params=  1885
+num_lmmse        | smooth_pinball=13.1697 train=11.6195 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.515 train=19.8347 | params=     4
+kron_lp          | smooth_pinball=20.4542 train=19.7739 | params=     4
+union_lp         | smooth_pinball=19.4848 train=18.9382 | params=     4
+dk_lap_poly      | smooth_pinball=17.0214 train=16.075 | params=    48
+rg_alg           | smooth_pinball=14.8134 train=13.0411 | params=  1885
+sffa             | smooth_pinball=13.3089 train=11.5161 | params=  1885
+num_lmmse        | smooth_pinball=13.1307 train=11.5699 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5034 train=19.6726 | params=     4
+kron_lp          | smooth_pinball=20.4465 train=19.6282 | params=     4
+union_lp         | smooth_pinball=19.4648 train=18.7508 | params=     4
+dk_lap_poly      | smooth_pinball=17.319 train=16.3429 | params=    48
+rg_alg           | smooth_pinball=14.22 train=13.2737 | params=  1885
+sffa             | smooth_pinball=13.1587 train=11.2094 | params=  1885
+num_lmmse        | smooth_pinball=13.2806 train=11.572 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.8 =====
+N=207 n0=165 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=12 k_sffa=12 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3098 train=19.4594 | params=     4
+kron_lp          | smooth_pinball=20.3922 train=19.541 | params=     4
+union_lp         | smooth_pinball=19.4055 train=18.7129 | params=     4
+dk_lap_poly      | smooth_pinball=17.1145 train=16.0895 | params=    48
+rg_alg           | smooth_pinball=13.4891 train=12.9244 | params=  1885
+sffa             | smooth_pinball=13.105 train=11.2991 | params=  1885
+num_lmmse        | smooth_pinball=13.1773 train=11.7708 | params= 27225
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.8 dk_lap_poly      | smooth_pinball_mean=17.0466 std=0.187231 | ok=10/10
+p=0.8 kron_lp          | smooth_pinball_mean=20.4661 std=0.147329 | ok=10/10
+p=0.8 num_lmmse        | smooth_pinball_mean=13.1636 std=0.165734 | ok=10/10
+p=0.8 rg_alg           | smooth_pinball_mean=14.0057 std=0.467763 | ok=10/10
+p=0.8 sffa             | smooth_pinball_mean=12.9324 std=0.229828 | ok=10/10
+p=0.8 sub_lp           | smooth_pinball_mean=20.4982 std=0.14502 | ok=10/10
+p=0.8 union_lp         | smooth_pinball_mean=19.4824 std=0.160993 | ok=10/10
+
+========================================================================================================================
+Running p_visible=0.9, k_sffa=13, r_sffa=3
+========================================================================================================================
+
+===== filtering seed=42, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2028 train=19.6326 | params=     4
+kron_lp          | smooth_pinball=20.2228 train=19.6476 | params=     4
+union_lp         | smooth_pinball=19.2252 train=18.7598 | params=     4
+dk_lap_poly      | smooth_pinball=16.8223 train=15.9401 | params=    52
+rg_alg           | smooth_pinball=14.2735 train=12.4781 | params=  2380
+sffa             | smooth_pinball=12.7836 train=11.2801 | params=  2380
+num_lmmse        | smooth_pinball=12.8819 train=11.3972 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=43, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5578 train=19.9025 | params=     4
+kron_lp          | smooth_pinball=20.514 train=19.8693 | params=     4
+union_lp         | smooth_pinball=19.4388 train=18.871 | params=     4
+dk_lap_poly      | smooth_pinball=17.1406 train=16.2192 | params=    52
+rg_alg           | smooth_pinball=13.6915 train=12.8063 | params=  2380
+sffa             | smooth_pinball=12.956 train=11.2667 | params=  2380
+num_lmmse        | smooth_pinball=13.0265 train=11.2643 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=44, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3302 train=19.8696 | params=     4
+kron_lp          | smooth_pinball=20.2973 train=19.8243 | params=     4
+union_lp         | smooth_pinball=19.2002 train=18.8095 | params=     4
+dk_lap_poly      | smooth_pinball=16.757 train=16.024 | params=    52
+rg_alg           | smooth_pinball=13.655 train=12.6018 | params=  2380
+sffa             | smooth_pinball=12.5319 train=11.2086 | params=  2380
+num_lmmse        | smooth_pinball=13.0239 train=11.1597 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=45, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5567 train=19.8564 | params=     4
+kron_lp          | smooth_pinball=20.5325 train=19.841 | params=     4
+union_lp         | smooth_pinball=19.4438 train=18.8448 | params=     4
+dk_lap_poly      | smooth_pinball=17.1204 train=16.173 | params=    52
+rg_alg           | smooth_pinball=13.9938 train=12.4035 | params=  2380
+sffa             | smooth_pinball=12.7879 train=11.2579 | params=  2380
+num_lmmse        | smooth_pinball=12.9642 train=11.3208 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=46, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.2974 train=19.8006 | params=     4
+kron_lp          | smooth_pinball=20.2701 train=19.7775 | params=     4
+union_lp         | smooth_pinball=19.3367 train=18.8866 | params=     4
+dk_lap_poly      | smooth_pinball=16.7853 train=15.9494 | params=    52
+rg_alg           | smooth_pinball=14.0974 train=13.05 | params=  2380
+sffa             | smooth_pinball=12.7161 train=11.1951 | params=  2380
+num_lmmse        | smooth_pinball=12.5503 train=11.238 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=47, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3413 train=19.7637 | params=     4
+kron_lp          | smooth_pinball=20.3021 train=19.7255 | params=     4
+union_lp         | smooth_pinball=19.371 train=18.8259 | params=     4
+dk_lap_poly      | smooth_pinball=17.0452 train=16.226 | params=    52
+rg_alg           | smooth_pinball=14.3056 train=13.1003 | params=  2380
+sffa             | smooth_pinball=12.7519 train=11.2297 | params=  2380
+num_lmmse        | smooth_pinball=12.975 train=11.2596 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=48, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.4382 train=19.6646 | params=     4
+kron_lp          | smooth_pinball=20.4423 train=19.6883 | params=     4
+union_lp         | smooth_pinball=19.425 train=18.752 | params=     4
+dk_lap_poly      | smooth_pinball=17.0082 train=15.9971 | params=    52
+rg_alg           | smooth_pinball=14.0788 train=12.6844 | params=  2380
+sffa             | smooth_pinball=12.7651 train=11.3296 | params=  2380
+num_lmmse        | smooth_pinball=12.8721 train=11.3107 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=49, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5622 train=19.8817 | params=     4
+kron_lp          | smooth_pinball=20.5211 train=19.8437 | params=     4
+union_lp         | smooth_pinball=19.5111 train=18.9615 | params=     4
+dk_lap_poly      | smooth_pinball=17.1049 train=16.1837 | params=    52
+rg_alg           | smooth_pinball=14.268 train=12.6435 | params=  2380
+sffa             | smooth_pinball=13.0646 train=11.3958 | params=  2380
+num_lmmse        | smooth_pinball=12.8435 train=11.3349 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=50, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.3974 train=19.7293 | params=     4
+kron_lp          | smooth_pinball=20.3974 train=19.7283 | params=     4
+union_lp         | smooth_pinball=19.4196 train=18.8394 | params=     4
+dk_lap_poly      | smooth_pinball=17.0157 train=16.0486 | params=    52
+rg_alg           | smooth_pinball=14.3475 train=13.0448 | params=  2380
+sffa             | smooth_pinball=12.8769 train=11.2023 | params=  2380
+num_lmmse        | smooth_pinball=12.8393 train=11.2969 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== filtering seed=51, p_visible=0.9 =====
+N=207 n0=186 raw_T=34272 clean_T=34272 missing_rows=0 split=ratio train=23990 test=10282
+loss=smooth_pinball huber_delta=0.1 tau_pinball=0.8 | optimizer=lbfgs epochs=50 lr=0.5 lbfgs_iter=20
+r_poly=3 k_union=13 k_sffa=13 r_sffa=3 rg_p0=0.9
+[TruthFilter] type=hadamard | formula=y=lambda*(((XB1^T)*tanh((XB2^T)/scale))B3^T), B1=L, B2=L^2 | B3_quadratic_coeffs=(2.0, -4.0, 2.0) | volterra_lambda=10 | nonlinear_scale=auto_per_sample_rms_of_XB2T | normalize_base=False | rms_XB1T=15.0003 | rms_XB2T=16.5877 | rms_hadamard_signal=13.1367 | rms_y=163.891 | F_full=None_nonlinear_truth | noise=skew_bernoulli,sigma=20
+--------------------------------------------------------------------------------------------------------
+sub_lp           | smooth_pinball=20.5654 train=19.8232 | params=     4
+kron_lp          | smooth_pinball=20.578 train=19.8313 | params=     4
+union_lp         | smooth_pinball=19.5638 train=18.9181 | params=     4
+dk_lap_poly      | smooth_pinball=17.2203 train=16.2705 | params=    52
+rg_alg           | smooth_pinball=13.3442 train=12.5513 | params=  2380
+sffa             | smooth_pinball=12.8623 train=11.2842 | params=  2380
+num_lmmse        | smooth_pinball=13.0236 train=11.3704 | params= 34596
+--------------------------------------------------------------------------------------------------------
+
+===== run-averaged summary =====
+p=0.9 dk_lap_poly      | smooth_pinball_mean=17.002 std=0.160865 | ok=10/10
+p=0.9 kron_lp          | smooth_pinball_mean=20.4078 std=0.127591 | ok=10/10
+p=0.9 num_lmmse        | smooth_pinball_mean=12.9 std=0.143999 | ok=10/10
+p=0.9 rg_alg           | smooth_pinball_mean=14.0055 std=0.336714 | ok=10/10
+p=0.9 sffa             | smooth_pinball_mean=12.8096 std=0.143785 | ok=10/10
+p=0.9 sub_lp           | smooth_pinball_mean=20.4249 std=0.13169 | ok=10/10
+p=0.9 union_lp         | smooth_pinball_mean=19.3935 std=0.114751 | ok=10/10

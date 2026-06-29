@@ -1,0 +1,8 @@
+p_visible,method,label,loss_type,tau_pinball,loss_mean,loss_std,train_loss_mean,train_loss_std,ok_runs,failed_runs,total_runs,num_parameters,n0_mean,truth_type,noise_type,sigma,split_mode,train_samples,test_samples,train_ratio,r_poly,k_union,k_sffa,r_sffa
+0.2,dk_lap_poly,Distance-k Laplacian polynomial,smooth_pinball,0.8,18.314201736450194,0.7922544681872672,17.451451110839844,0.869024820893185,10,0,10,24,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3
+0.2,kron_lp,Kron Laplacian polynomial,smooth_pinball,0.8,20.310042572021484,1.218332677417328,19.649796104431154,1.0002833283574621,10,0,10,4,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3
+0.2,num_lmmse,Numerical LMMSE (MSE-trained baseline),smooth_pinball,0.8,18.142119216918946,0.8681116467476984,15.386865997314453,0.7240869010533302,10,0,10,1681,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3
+0.2,rg_alg,Random-group algebra,smooth_pinball,0.8,15.069790077209472,0.8590559031301229,13.982409000396729,0.7028568211927011,10,0,10,259,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3
+0.2,sffa,Distance-based Laplacian SFFA,smooth_pinball,0.8,13.972367095947266,0.39900260317144326,12.397701358795166,0.2624907940540706,10,0,10,259,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3
+0.2,sub_lp,Induced-subgraph Laplacian polynomial,smooth_pinball,0.8,20.692527770996094,1.224921250081002,20.00625343322754,1.011624696043612,10,0,10,4,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3
+0.2,union_lp,Union distance-Laplacian polynomial,smooth_pinball,0.8,20.02225456237793,1.145445766572987,19.296448135375975,0.9176459359016051,10,0,10,4,41.0,hadamard,skew_bernoulli,20.0,ratio,23990,10282,0.7,3,6,6,3

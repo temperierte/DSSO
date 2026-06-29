@@ -1,0 +1,756 @@
+====================================================================================================
+Running loss_type=mse
+python.exe sfl_main_horizon.py --seeds 42,43,44,45,46,47,48,49,50,51 --p-visibles 0.3,0.4,0.5,0.6,0.7 --input-len 12 --pred-lens 3 --split-ratios 0.7,0.1,0.2 --num-timesteps 0 --optimizer lbfgs --lbfgs-max-iter 10 --epochs 50 --lr 1.0 --loss-type mse --methods ar,sub_lp,dk_lp,rg_lp,rg_alg,kron_lp,union_lp,sffa --k 10 --r 2 --ridge 0. --sfl-ridge 0. --kron-ridge 0.0 --no-kron-use-pinv --drop-gap-windows --output-csv results_sfl_horizon\horizon_mse.csv
+====================================================================================================
+
+
+===== horizon seed=42, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.022156 | val_mse=60.986492 | train_mse=59.918934 | params=    2232
+sub_lp           | test_mse=68.709442 | val_mse=60.716007 | train_mse=60.041668 | params=     144
+dk_lp            | test_mse=68.407982 | val_mse=60.410599 | train_mse=59.391296 | params=    1080
+rg_lp            | test_mse=68.686272 | val_mse=60.700256 | train_mse=60.039722 | params=     432
+rg_alg           | test_mse=68.283684 | val_mse=60.381866 | train_mse=59.410809 | params=    3996
+kron_lp          | test_mse=68.646812 | val_mse=60.646748 | train_mse=59.840694 | params=     144
+union_lp         | test_mse=68.785378 | val_mse=60.685543 | train_mse=59.741798 | params=     144
+sffa             | test_mse=67.945099 | val_mse=60.134651 | train_mse=59.004372 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=42, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.792763 | val_mse=61.239483 | train_mse=60.855408 | params=    2952
+sub_lp           | test_mse=69.385017 | val_mse=60.963028 | train_mse=60.914009 | params=     144
+dk_lp            | test_mse=69.140327 | val_mse=60.732151 | train_mse=60.363800 | params=    1080
+rg_lp            | test_mse=69.452148 | val_mse=61.047264 | train_mse=60.984730 | params=     432
+rg_alg           | test_mse=68.981178 | val_mse=60.723713 | train_mse=60.394596 | params=    3996
+kron_lp          | test_mse=69.382812 | val_mse=60.932041 | train_mse=60.780293 | params=     144
+union_lp         | test_mse=69.533272 | val_mse=61.014877 | train_mse=60.683769 | params=     144
+sffa             | test_mse=68.727043 | val_mse=60.454750 | train_mse=59.979485 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=42, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.089012 | val_mse=60.172119 | train_mse=59.580643 | params=    3708
+sub_lp           | test_mse=68.681503 | val_mse=59.816463 | train_mse=59.533676 | params=     144
+dk_lp            | test_mse=68.478523 | val_mse=59.583687 | train_mse=59.070534 | params=    1080
+rg_lp            | test_mse=68.689751 | val_mse=59.843388 | train_mse=59.557575 | params=     432
+rg_alg           | test_mse=68.384544 | val_mse=59.588150 | train_mse=59.187248 | params=    3996
+kron_lp          | test_mse=68.661621 | val_mse=59.785744 | train_mse=59.456894 | params=     144
+union_lp         | test_mse=68.853073 | val_mse=59.889954 | train_mse=59.392860 | params=     144
+sffa             | test_mse=68.167801 | val_mse=59.284348 | train_mse=58.713882 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=42, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=68.685112 | val_mse=60.064079 | train_mse=59.498055 | params=    4464
+sub_lp           | test_mse=68.185463 | val_mse=59.612286 | train_mse=59.334976 | params=     144
+dk_lp            | test_mse=68.054100 | val_mse=59.448578 | train_mse=58.911171 | params=    1080
+rg_lp            | test_mse=68.323212 | val_mse=59.735760 | train_mse=59.475605 | params=     432
+rg_alg           | test_mse=67.890884 | val_mse=59.384087 | train_mse=58.994961 | params=    3996
+kron_lp          | test_mse=68.202301 | val_mse=59.609791 | train_mse=59.279724 | params=     144
+union_lp         | test_mse=68.445145 | val_mse=59.780697 | train_mse=59.260334 | params=     144
+sffa             | test_mse=67.753647 | val_mse=59.140816 | train_mse=58.570484 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=42, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=68.493210 | val_mse=59.806568 | train_mse=58.992676 | params=    5184
+sub_lp           | test_mse=67.980141 | val_mse=59.330143 | train_mse=58.766296 | params=     144
+dk_lp            | test_mse=67.898911 | val_mse=59.166836 | train_mse=58.394157 | params=    1080
+rg_lp            | test_mse=68.046738 | val_mse=59.393215 | train_mse=58.835514 | params=     432
+rg_alg           | test_mse=67.790161 | val_mse=59.118107 | train_mse=58.536900 | params=    3996
+kron_lp          | test_mse=68.010826 | val_mse=59.335239 | train_mse=58.744766 | params=     144
+union_lp         | test_mse=68.297997 | val_mse=59.483795 | train_mse=58.754025 | params=     144
+sffa             | test_mse=67.650368 | val_mse=58.875423 | train_mse=58.090107 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=43, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.170807 | val_mse=59.682022 | train_mse=56.719414 | params=    2232
+sub_lp           | test_mse=66.828995 | val_mse=59.485374 | train_mse=56.697525 | params=     144
+dk_lp            | test_mse=66.701073 | val_mse=59.225338 | train_mse=56.142738 | params=    1080
+rg_lp            | test_mse=66.875053 | val_mse=59.538185 | train_mse=56.771229 | params=     432
+rg_alg           | test_mse=66.617752 | val_mse=59.133747 | train_mse=56.014740 | params=    3996
+kron_lp          | test_mse=66.803375 | val_mse=59.415051 | train_mse=56.567467 | params=     144
+union_lp         | test_mse=66.988647 | val_mse=59.452377 | train_mse=56.475910 | params=     144
+sffa             | test_mse=66.435104 | val_mse=58.930969 | train_mse=55.665386 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=43, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.430580 | val_mse=59.749737 | train_mse=57.114960 | params=    2952
+sub_lp           | test_mse=67.028786 | val_mse=59.476749 | train_mse=57.059048 | params=     144
+dk_lp            | test_mse=66.930084 | val_mse=59.238411 | train_mse=56.515926 | params=    1080
+rg_lp            | test_mse=67.045372 | val_mse=59.490852 | train_mse=57.073875 | params=     432
+rg_alg           | test_mse=66.828537 | val_mse=59.104618 | train_mse=56.604324 | params=    3996
+kron_lp          | test_mse=66.947655 | val_mse=59.399055 | train_mse=56.918999 | params=     144
+union_lp         | test_mse=67.250267 | val_mse=59.469990 | train_mse=56.872478 | params=     144
+sffa             | test_mse=66.666115 | val_mse=58.959648 | train_mse=56.141956 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=43, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=68.779373 | val_mse=60.560207 | train_mse=58.389999 | params=    3708
+sub_lp           | test_mse=68.350296 | val_mse=60.239674 | train_mse=58.361801 | params=     144
+dk_lp            | test_mse=68.224625 | val_mse=60.007256 | train_mse=57.869301 | params=    1080
+rg_lp            | test_mse=68.322395 | val_mse=60.244637 | train_mse=58.356152 | params=     432
+rg_alg           | test_mse=68.173065 | val_mse=60.060879 | train_mse=58.016827 | params=    3996
+kron_lp          | test_mse=68.256050 | val_mse=60.153233 | train_mse=58.237770 | params=     144
+union_lp         | test_mse=68.594330 | val_mse=60.288570 | train_mse=58.243660 | params=     144
+sffa             | test_mse=67.931084 | val_mse=59.623737 | train_mse=57.476368 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=43, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.978470 | val_mse=59.361347 | train_mse=57.336292 | params=    4464
+sub_lp           | test_mse=67.525070 | val_mse=58.949455 | train_mse=57.202732 | params=     144
+dk_lp            | test_mse=67.490532 | val_mse=58.801792 | train_mse=56.848484 | params=    1080
+rg_lp            | test_mse=67.619118 | val_mse=59.061665 | train_mse=57.313560 | params=     432
+rg_alg           | test_mse=67.350319 | val_mse=58.799377 | train_mse=56.990921 | params=    3996
+kron_lp          | test_mse=67.549187 | val_mse=58.954540 | train_mse=57.182896 | params=     144
+union_lp         | test_mse=67.819183 | val_mse=59.068272 | train_mse=57.185650 | params=     144
+sffa             | test_mse=67.222717 | val_mse=58.487728 | train_mse=56.499260 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=43, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=68.091766 | val_mse=59.064415 | train_mse=57.946835 | params=    5184
+sub_lp           | test_mse=67.652061 | val_mse=58.669498 | train_mse=57.811020 | params=     144
+dk_lp            | test_mse=67.594299 | val_mse=58.515491 | train_mse=57.446335 | params=    1080
+rg_lp            | test_mse=67.716591 | val_mse=58.748928 | train_mse=57.899529 | params=     432
+rg_alg           | test_mse=67.441292 | val_mse=58.498920 | train_mse=57.583805 | params=    3996
+kron_lp          | test_mse=67.652145 | val_mse=58.664009 | train_mse=57.783413 | params=     144
+union_lp         | test_mse=67.932068 | val_mse=58.781013 | train_mse=57.759109 | params=     144
+sffa             | test_mse=67.405869 | val_mse=58.251144 | train_mse=57.145206 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=44, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.544716 | val_mse=59.791309 | train_mse=58.544106 | params=    2232
+sub_lp           | test_mse=67.360588 | val_mse=59.549702 | train_mse=58.683231 | params=     144
+dk_lp            | test_mse=67.225861 | val_mse=59.244015 | train_mse=58.207237 | params=    1080
+rg_lp            | test_mse=67.334999 | val_mse=59.507473 | train_mse=58.641754 | params=     432
+rg_alg           | test_mse=66.798447 | val_mse=58.888851 | train_mse=57.971912 | params=    3996
+kron_lp          | test_mse=67.271248 | val_mse=59.407742 | train_mse=58.463451 | params=     144
+union_lp         | test_mse=67.394730 | val_mse=59.392746 | train_mse=58.415928 | params=     144
+sffa             | test_mse=66.929108 | val_mse=58.885300 | train_mse=57.747299 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=44, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.224945 | val_mse=61.472572 | train_mse=61.281609 | params=    2952
+sub_lp           | test_mse=68.915207 | val_mse=61.141609 | train_mse=61.360222 | params=     144
+dk_lp            | test_mse=68.735313 | val_mse=60.872513 | train_mse=60.825279 | params=    1080
+rg_lp            | test_mse=68.907631 | val_mse=61.148083 | train_mse=61.390263 | params=     432
+rg_alg           | test_mse=68.632675 | val_mse=60.866386 | train_mse=61.003536 | params=    3996
+kron_lp          | test_mse=68.750549 | val_mse=61.016354 | train_mse=61.097237 | params=     144
+union_lp         | test_mse=69.022263 | val_mse=61.171997 | train_mse=61.131420 | params=     144
+sffa             | test_mse=68.388283 | val_mse=60.596321 | train_mse=60.364571 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=44, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.264793 | val_mse=60.637024 | train_mse=60.314537 | params=    3708
+sub_lp           | test_mse=68.847908 | val_mse=60.258266 | train_mse=60.265686 | params=     144
+dk_lp            | test_mse=68.735085 | val_mse=59.984623 | train_mse=59.787720 | params=    1080
+rg_lp            | test_mse=68.983238 | val_mse=60.348640 | train_mse=60.338684 | params=     432
+rg_alg           | test_mse=68.575012 | val_mse=60.076530 | train_mse=59.985470 | params=    3996
+kron_lp          | test_mse=68.819191 | val_mse=60.180767 | train_mse=60.102585 | params=     144
+union_lp         | test_mse=69.035454 | val_mse=60.289734 | train_mse=60.106335 | params=     144
+sffa             | test_mse=68.409569 | val_mse=59.685402 | train_mse=59.368702 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=44, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.459961 | val_mse=61.846378 | train_mse=61.051998 | params=    4464
+sub_lp           | test_mse=69.974991 | val_mse=61.377293 | train_mse=60.909153 | params=     144
+dk_lp            | test_mse=69.836754 | val_mse=61.085495 | train_mse=60.442894 | params=    1080
+rg_lp            | test_mse=70.075073 | val_mse=61.449562 | train_mse=61.012074 | params=     432
+rg_alg           | test_mse=69.768417 | val_mse=61.178505 | train_mse=60.651463 | params=    3996
+kron_lp          | test_mse=69.871681 | val_mse=61.281437 | train_mse=60.823196 | params=     144
+union_lp         | test_mse=70.225174 | val_mse=61.487617 | train_mse=60.816322 | params=     144
+sffa             | test_mse=69.562553 | val_mse=60.754463 | train_mse=60.100174 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=44, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.587242 | val_mse=61.833160 | train_mse=60.692554 | params=    5184
+sub_lp           | test_mse=70.048584 | val_mse=61.313034 | train_mse=60.469215 | params=     144
+dk_lp            | test_mse=69.938530 | val_mse=61.052013 | train_mse=60.043907 | params=    1080
+rg_lp            | test_mse=70.117119 | val_mse=61.363876 | train_mse=60.565315 | params=     432
+rg_alg           | test_mse=69.824318 | val_mse=61.104805 | train_mse=60.261482 | params=    3996
+kron_lp          | test_mse=70.031845 | val_mse=61.278152 | train_mse=60.402290 | params=     144
+union_lp         | test_mse=70.352417 | val_mse=61.424850 | train_mse=60.416031 | params=     144
+sffa             | test_mse=69.701866 | val_mse=60.754673 | train_mse=59.723263 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=45, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.272217 | val_mse=58.194618 | train_mse=58.020187 | params=    2232
+sub_lp           | test_mse=67.054680 | val_mse=58.063972 | train_mse=58.227863 | params=     144
+dk_lp            | test_mse=66.847229 | val_mse=57.731430 | train_mse=57.609173 | params=    1080
+rg_lp            | test_mse=67.019585 | val_mse=58.038403 | train_mse=58.209774 | params=     432
+rg_alg           | test_mse=66.798836 | val_mse=57.649410 | train_mse=57.620064 | params=    3996
+kron_lp          | test_mse=67.017464 | val_mse=57.972595 | train_mse=58.004707 | params=     144
+union_lp         | test_mse=67.017509 | val_mse=57.889423 | train_mse=57.786236 | params=     144
+sffa             | test_mse=66.609634 | val_mse=57.521416 | train_mse=57.156681 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=45, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.664307 | val_mse=58.570705 | train_mse=58.109070 | params=    2952
+sub_lp           | test_mse=67.278656 | val_mse=58.298275 | train_mse=58.177624 | params=     144
+dk_lp            | test_mse=67.134254 | val_mse=58.033421 | train_mse=57.685349 | params=    1080
+rg_lp            | test_mse=67.317909 | val_mse=58.316193 | train_mse=58.201790 | params=     432
+rg_alg           | test_mse=66.944519 | val_mse=58.007328 | train_mse=57.708355 | params=    3996
+kron_lp          | test_mse=67.292870 | val_mse=58.284111 | train_mse=58.055748 | params=     144
+union_lp         | test_mse=67.376991 | val_mse=58.207123 | train_mse=57.898529 | params=     144
+sffa             | test_mse=66.839828 | val_mse=57.780804 | train_mse=57.284092 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=45, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.600708 | val_mse=60.819443 | train_mse=60.130840 | params=    3708
+sub_lp           | test_mse=69.122391 | val_mse=60.469673 | train_mse=60.103832 | params=     144
+dk_lp            | test_mse=68.965706 | val_mse=60.237782 | train_mse=59.608959 | params=    1080
+rg_lp            | test_mse=69.218849 | val_mse=60.546547 | train_mse=60.202332 | params=     432
+rg_alg           | test_mse=68.851646 | val_mse=60.178993 | train_mse=59.706890 | params=    3996
+kron_lp          | test_mse=69.157036 | val_mse=60.480488 | train_mse=60.011227 | params=     144
+union_lp         | test_mse=69.320549 | val_mse=60.519306 | train_mse=59.908421 | params=     144
+sffa             | test_mse=68.668190 | val_mse=59.991825 | train_mse=59.221786 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=45, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.554298 | val_mse=61.989216 | train_mse=60.588085 | params=    4464
+sub_lp           | test_mse=70.041321 | val_mse=61.558857 | train_mse=60.478771 | params=     144
+dk_lp            | test_mse=69.922623 | val_mse=61.327610 | train_mse=60.053860 | params=    1080
+rg_lp            | test_mse=70.120270 | val_mse=61.636242 | train_mse=60.585712 | params=     432
+rg_alg           | test_mse=69.785904 | val_mse=61.361057 | train_mse=60.179817 | params=    3996
+kron_lp          | test_mse=70.057594 | val_mse=61.565701 | train_mse=60.434856 | params=     144
+union_lp         | test_mse=70.322975 | val_mse=61.667564 | train_mse=60.401016 | params=     144
+sffa             | test_mse=69.662445 | val_mse=61.022957 | train_mse=59.703144 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=45, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.354912 | val_mse=61.712734 | train_mse=60.205875 | params=    5184
+sub_lp           | test_mse=69.780716 | val_mse=61.213276 | train_mse=60.020523 | params=     144
+dk_lp            | test_mse=69.686539 | val_mse=61.000359 | train_mse=59.610954 | params=    1080
+rg_lp            | test_mse=69.855186 | val_mse=61.302933 | train_mse=60.138866 | params=     432
+rg_alg           | test_mse=69.536842 | val_mse=60.965725 | train_mse=59.729340 | params=    3996
+kron_lp          | test_mse=69.793068 | val_mse=61.203152 | train_mse=59.973316 | params=     144
+union_lp         | test_mse=70.129578 | val_mse=61.388351 | train_mse=59.987221 | params=     144
+sffa             | test_mse=69.400597 | val_mse=60.691517 | train_mse=59.279488 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=46, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.110825 | val_mse=62.010803 | train_mse=60.360878 | params=    2232
+sub_lp           | test_mse=69.624443 | val_mse=61.513767 | train_mse=60.336716 | params=     144
+dk_lp            | test_mse=69.578354 | val_mse=61.261097 | train_mse=59.850983 | params=    1080
+rg_lp            | test_mse=69.677345 | val_mse=61.587944 | train_mse=60.361553 | params=     432
+rg_alg           | test_mse=69.166595 | val_mse=60.934517 | train_mse=59.474285 | params=    3996
+kron_lp          | test_mse=69.696518 | val_mse=61.509861 | train_mse=60.153267 | params=     144
+union_lp         | test_mse=69.854935 | val_mse=61.439480 | train_mse=60.077591 | params=     144
+sffa             | test_mse=69.280853 | val_mse=60.883621 | train_mse=59.368675 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=46, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.225197 | val_mse=61.300755 | train_mse=59.748367 | params=    2952
+sub_lp           | test_mse=69.799232 | val_mse=60.873550 | train_mse=59.688263 | params=     144
+dk_lp            | test_mse=69.807968 | val_mse=60.615719 | train_mse=59.233250 | params=    1080
+rg_lp            | test_mse=69.860756 | val_mse=60.946823 | train_mse=59.698326 | params=     432
+rg_alg           | test_mse=69.612221 | val_mse=60.639610 | train_mse=59.248562 | params=    3996
+kron_lp          | test_mse=69.854202 | val_mse=60.839249 | train_mse=59.504574 | params=     144
+union_lp         | test_mse=70.106544 | val_mse=60.866940 | train_mse=59.482285 | params=     144
+sffa             | test_mse=69.580238 | val_mse=60.206299 | train_mse=58.784691 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=46, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.553368 | val_mse=61.701492 | train_mse=60.647053 | params=    3708
+sub_lp           | test_mse=70.137238 | val_mse=61.260365 | train_mse=60.507458 | params=     144
+dk_lp            | test_mse=70.030090 | val_mse=60.950363 | train_mse=59.992653 | params=    1080
+rg_lp            | test_mse=70.178474 | val_mse=61.284817 | train_mse=60.502193 | params=     432
+rg_alg           | test_mse=69.850082 | val_mse=61.021896 | train_mse=60.223938 | params=    3996
+kron_lp          | test_mse=70.099983 | val_mse=61.194958 | train_mse=60.331650 | params=     144
+union_lp         | test_mse=70.371155 | val_mse=61.270786 | train_mse=60.320358 | params=     144
+sffa             | test_mse=69.668610 | val_mse=60.663883 | train_mse=59.624199 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=46, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.225731 | val_mse=61.309601 | train_mse=60.412708 | params=    4464
+sub_lp           | test_mse=69.707108 | val_mse=60.797306 | train_mse=60.160587 | params=     144
+dk_lp            | test_mse=69.645256 | val_mse=60.564354 | train_mse=59.702297 | params=    1080
+rg_lp            | test_mse=69.778870 | val_mse=60.872272 | train_mse=60.219948 | params=     432
+rg_alg           | test_mse=69.562103 | val_mse=60.647354 | train_mse=59.960583 | params=    3996
+kron_lp          | test_mse=69.676903 | val_mse=60.722446 | train_mse=60.039085 | params=     144
+union_lp         | test_mse=70.001244 | val_mse=60.899166 | train_mse=60.102367 | params=     144
+sffa             | test_mse=69.307854 | val_mse=60.298252 | train_mse=59.369492 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=46, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.369698 | val_mse=60.892139 | train_mse=60.266647 | params=    5184
+sub_lp           | test_mse=69.802269 | val_mse=60.394566 | train_mse=59.965122 | params=     144
+dk_lp            | test_mse=69.686562 | val_mse=60.164112 | train_mse=59.521637 | params=    1080
+rg_lp            | test_mse=69.965088 | val_mse=60.527710 | train_mse=60.123146 | params=     432
+rg_alg           | test_mse=69.588547 | val_mse=60.270153 | train_mse=59.779106 | params=    3996
+kron_lp          | test_mse=69.780960 | val_mse=60.345844 | train_mse=59.878792 | params=     144
+union_lp         | test_mse=70.109398 | val_mse=60.538216 | train_mse=59.937916 | params=     144
+sffa             | test_mse=69.360802 | val_mse=59.885933 | train_mse=59.176853 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=47, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=72.073700 | val_mse=64.636490 | train_mse=61.312954 | params=    2232
+sub_lp           | test_mse=71.759048 | val_mse=64.327339 | train_mse=61.390072 | params=     144
+dk_lp            | test_mse=71.655800 | val_mse=64.128189 | train_mse=60.964233 | params=    1080
+rg_lp            | test_mse=71.778343 | val_mse=64.340584 | train_mse=61.383884 | params=     432
+rg_alg           | test_mse=71.319603 | val_mse=63.888988 | train_mse=60.775211 | params=    3996
+kron_lp          | test_mse=71.738258 | val_mse=64.237663 | train_mse=61.214333 | params=     144
+union_lp         | test_mse=71.892647 | val_mse=64.305962 | train_mse=61.104458 | params=     144
+sffa             | test_mse=71.356682 | val_mse=63.845062 | train_mse=60.555138 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=47, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=71.043823 | val_mse=62.959427 | train_mse=60.689209 | params=    2952
+sub_lp           | test_mse=70.696320 | val_mse=62.610706 | train_mse=60.671913 | params=     144
+dk_lp            | test_mse=70.611053 | val_mse=62.439365 | train_mse=60.257481 | params=    1080
+rg_lp            | test_mse=70.731407 | val_mse=62.660763 | train_mse=60.686989 | params=     432
+rg_alg           | test_mse=70.392113 | val_mse=62.257183 | train_mse=60.221825 | params=    3996
+kron_lp          | test_mse=70.678284 | val_mse=62.536137 | train_mse=60.576263 | params=     144
+union_lp         | test_mse=70.903328 | val_mse=62.641739 | train_mse=60.476265 | params=     144
+sffa             | test_mse=70.243797 | val_mse=62.123501 | train_mse=59.830921 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=47, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.529251 | val_mse=61.792419 | train_mse=59.781483 | params=    3708
+sub_lp           | test_mse=70.144516 | val_mse=61.364773 | train_mse=59.644787 | params=     144
+dk_lp            | test_mse=70.051842 | val_mse=61.214069 | train_mse=59.264900 | params=    1080
+rg_lp            | test_mse=70.253693 | val_mse=61.446426 | train_mse=59.742661 | params=     432
+rg_alg           | test_mse=69.855522 | val_mse=61.123989 | train_mse=59.350285 | params=    3996
+kron_lp          | test_mse=70.177559 | val_mse=61.364899 | train_mse=59.584507 | params=     144
+union_lp         | test_mse=70.383102 | val_mse=61.483959 | train_mse=59.558182 | params=     144
+sffa             | test_mse=69.775558 | val_mse=60.935165 | train_mse=58.866489 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=47, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.076897 | val_mse=61.401043 | train_mse=59.920967 | params=    4464
+sub_lp           | test_mse=69.593765 | val_mse=60.905796 | train_mse=59.688663 | params=     144
+dk_lp            | test_mse=69.521576 | val_mse=60.756443 | train_mse=59.302055 | params=    1080
+rg_lp            | test_mse=69.682724 | val_mse=60.984798 | train_mse=59.756596 | params=     432
+rg_alg           | test_mse=69.345108 | val_mse=60.695538 | train_mse=59.405643 | params=    3996
+kron_lp          | test_mse=69.623413 | val_mse=60.898109 | train_mse=59.647926 | params=     144
+union_lp         | test_mse=69.884094 | val_mse=61.048077 | train_mse=59.642910 | params=     144
+sffa             | test_mse=69.220955 | val_mse=60.511189 | train_mse=58.941544 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=47, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.629860 | val_mse=60.544144 | train_mse=59.297573 | params=    5184
+sub_lp           | test_mse=69.102135 | val_mse=60.044933 | train_mse=59.083908 | params=     144
+dk_lp            | test_mse=69.019600 | val_mse=59.867741 | train_mse=58.730381 | params=    1080
+rg_lp            | test_mse=69.278282 | val_mse=60.200966 | train_mse=59.229370 | params=     432
+rg_alg           | test_mse=68.893578 | val_mse=59.925411 | train_mse=58.869156 | params=    3996
+kron_lp          | test_mse=69.110687 | val_mse=60.034760 | train_mse=59.055027 | params=     144
+union_lp         | test_mse=69.383026 | val_mse=60.184990 | train_mse=59.046192 | params=     144
+sffa             | test_mse=68.736305 | val_mse=59.624519 | train_mse=58.367737 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=48, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.896187 | val_mse=60.125652 | train_mse=60.624855 | params=    2232
+sub_lp           | test_mse=70.572823 | val_mse=59.895653 | train_mse=60.697342 | params=     144
+dk_lp            | test_mse=70.499428 | val_mse=59.824753 | train_mse=60.261436 | params=    1080
+rg_lp            | test_mse=70.577507 | val_mse=59.915413 | train_mse=60.685726 | params=     432
+rg_alg           | test_mse=70.155121 | val_mse=59.556431 | train_mse=60.224255 | params=    3996
+kron_lp          | test_mse=70.559280 | val_mse=59.852242 | train_mse=60.555019 | params=     144
+union_lp         | test_mse=70.651253 | val_mse=59.922935 | train_mse=60.400867 | params=     144
+sffa             | test_mse=70.320839 | val_mse=59.600300 | train_mse=59.926659 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=48, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.596916 | val_mse=60.266773 | train_mse=60.325008 | params=    2952
+sub_lp           | test_mse=70.023239 | val_mse=59.875610 | train_mse=60.145077 | params=     144
+dk_lp            | test_mse=70.026749 | val_mse=59.816887 | train_mse=59.778385 | params=    1080
+rg_lp            | test_mse=70.204536 | val_mse=60.042030 | train_mse=60.245079 | params=     432
+rg_alg           | test_mse=69.791458 | val_mse=59.571705 | train_mse=59.802750 | params=    3996
+kron_lp          | test_mse=70.104118 | val_mse=59.871777 | train_mse=60.074303 | params=     144
+union_lp         | test_mse=70.295975 | val_mse=59.948692 | train_mse=60.064182 | params=     144
+sffa             | test_mse=69.775497 | val_mse=59.684944 | train_mse=59.445457 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=48, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.374367 | val_mse=59.819458 | train_mse=59.428829 | params=    3708
+sub_lp           | test_mse=69.796455 | val_mse=59.387394 | train_mse=59.305824 | params=     144
+dk_lp            | test_mse=69.731590 | val_mse=59.286339 | train_mse=58.888550 | params=    1080
+rg_lp            | test_mse=69.899796 | val_mse=59.473831 | train_mse=59.368107 | params=     432
+rg_alg           | test_mse=69.579056 | val_mse=59.150497 | train_mse=58.955154 | params=    3996
+kron_lp          | test_mse=69.830696 | val_mse=59.372265 | train_mse=59.235954 | params=     144
+union_lp         | test_mse=70.048592 | val_mse=59.449032 | train_mse=59.198807 | params=     144
+sffa             | test_mse=69.522415 | val_mse=59.116966 | train_mse=58.628670 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=48, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.751419 | val_mse=59.529922 | train_mse=58.704647 | params=    4464
+sub_lp           | test_mse=69.196091 | val_mse=59.095676 | train_mse=58.493679 | params=     144
+dk_lp            | test_mse=69.125809 | val_mse=58.939342 | train_mse=58.121235 | params=    1080
+rg_lp            | test_mse=69.324837 | val_mse=59.212227 | train_mse=58.634777 | params=     432
+rg_alg           | test_mse=68.924065 | val_mse=58.856831 | train_mse=58.162033 | params=    3996
+kron_lp          | test_mse=69.235001 | val_mse=59.091724 | train_mse=58.466545 | params=     144
+union_lp         | test_mse=69.482040 | val_mse=59.174866 | train_mse=58.453426 | params=     144
+sffa             | test_mse=68.929092 | val_mse=58.720577 | train_mse=57.857220 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=48, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.389381 | val_mse=59.719948 | train_mse=58.939617 | params=    5184
+sub_lp           | test_mse=68.813232 | val_mse=59.242229 | train_mse=58.707829 | params=     144
+dk_lp            | test_mse=68.779282 | val_mse=59.069984 | train_mse=58.387928 | params=    1080
+rg_lp            | test_mse=68.907600 | val_mse=59.323620 | train_mse=58.782745 | params=     432
+rg_alg           | test_mse=68.640396 | val_mse=59.079403 | train_mse=58.521828 | params=    3996
+kron_lp          | test_mse=68.839691 | val_mse=59.251598 | train_mse=58.727020 | params=     144
+union_lp         | test_mse=69.104980 | val_mse=59.347996 | train_mse=58.700211 | params=     144
+sffa             | test_mse=68.516075 | val_mse=58.796127 | train_mse=58.067139 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=49, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=68.502655 | val_mse=59.577148 | train_mse=58.279377 | params=    2232
+sub_lp           | test_mse=68.244431 | val_mse=59.330296 | train_mse=58.422089 | params=     144
+dk_lp            | test_mse=68.116005 | val_mse=59.020397 | train_mse=57.895817 | params=    1080
+rg_lp            | test_mse=68.242546 | val_mse=59.274197 | train_mse=58.388790 | params=     432
+rg_alg           | test_mse=67.959038 | val_mse=58.914722 | train_mse=57.928017 | params=    3996
+kron_lp          | test_mse=68.163574 | val_mse=59.195774 | train_mse=58.149815 | params=     144
+union_lp         | test_mse=68.374817 | val_mse=59.287525 | train_mse=58.132294 | params=     144
+sffa             | test_mse=67.772308 | val_mse=58.440907 | train_mse=57.406860 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=49, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.493599 | val_mse=60.030384 | train_mse=59.489082 | params=    2952
+sub_lp           | test_mse=69.148781 | val_mse=59.700226 | train_mse=59.462662 | params=     144
+dk_lp            | test_mse=68.978523 | val_mse=59.405567 | train_mse=59.005424 | params=    1080
+rg_lp            | test_mse=69.186729 | val_mse=59.744728 | train_mse=59.515163 | params=     432
+rg_alg           | test_mse=68.845215 | val_mse=59.426472 | train_mse=59.096771 | params=    3996
+kron_lp          | test_mse=69.033531 | val_mse=59.586319 | train_mse=59.276413 | params=     144
+union_lp         | test_mse=69.282631 | val_mse=59.721256 | train_mse=59.269367 | params=     144
+sffa             | test_mse=68.645348 | val_mse=59.008617 | train_mse=58.567657 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=49, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.431541 | val_mse=60.581997 | train_mse=59.668438 | params=    3708
+sub_lp           | test_mse=69.030365 | val_mse=60.164062 | train_mse=59.566887 | params=     144
+dk_lp            | test_mse=68.911423 | val_mse=59.914696 | train_mse=59.182369 | params=    1080
+rg_lp            | test_mse=69.093353 | val_mse=60.235603 | train_mse=59.647514 | params=     432
+rg_alg           | test_mse=68.895302 | val_mse=59.933884 | train_mse=59.263161 | params=    3996
+kron_lp          | test_mse=68.999802 | val_mse=60.098476 | train_mse=59.432846 | params=     144
+union_lp         | test_mse=69.231194 | val_mse=60.217403 | train_mse=59.432186 | params=     144
+sffa             | test_mse=68.586502 | val_mse=59.589966 | train_mse=58.796902 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=49, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.988434 | val_mse=61.168907 | train_mse=60.110935 | params=    4464
+sub_lp           | test_mse=69.487411 | val_mse=60.664726 | train_mse=59.934601 | params=     144
+dk_lp            | test_mse=69.388786 | val_mse=60.388180 | train_mse=59.502182 | params=    1080
+rg_lp            | test_mse=69.570145 | val_mse=60.735970 | train_mse=60.008015 | params=     432
+rg_alg           | test_mse=69.309555 | val_mse=60.450092 | train_mse=59.702278 | params=    3996
+kron_lp          | test_mse=69.463509 | val_mse=60.581886 | train_mse=59.788055 | params=     144
+union_lp         | test_mse=69.794441 | val_mse=60.767551 | train_mse=59.847980 | params=     144
+sffa             | test_mse=69.109848 | val_mse=60.063229 | train_mse=59.106735 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=49, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.179436 | val_mse=61.773426 | train_mse=60.281094 | params=    5184
+sub_lp           | test_mse=69.556763 | val_mse=61.139912 | train_mse=59.983425 | params=     144
+dk_lp            | test_mse=69.513908 | val_mse=60.932011 | train_mse=59.625660 | params=    1080
+rg_lp            | test_mse=69.743095 | val_mse=61.308132 | train_mse=60.164680 | params=     432
+rg_alg           | test_mse=69.364922 | val_mse=60.948334 | train_mse=59.814640 | params=    3996
+kron_lp          | test_mse=69.587952 | val_mse=61.140141 | train_mse=59.961391 | params=     144
+union_lp         | test_mse=69.973686 | val_mse=61.346317 | train_mse=60.025757 | params=     144
+sffa             | test_mse=69.217194 | val_mse=60.605953 | train_mse=59.294136 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=50, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.659958 | val_mse=62.632992 | train_mse=61.398949 | params=    2232
+sub_lp           | test_mse=70.300911 | val_mse=62.149963 | train_mse=61.335098 | params=     144
+dk_lp            | test_mse=70.239494 | val_mse=61.680393 | train_mse=60.624432 | params=    1080
+rg_lp            | test_mse=70.280701 | val_mse=62.172016 | train_mse=61.337841 | params=     432
+rg_alg           | test_mse=70.011223 | val_mse=61.726414 | train_mse=60.768131 | params=    3996
+kron_lp          | test_mse=70.307724 | val_mse=62.008423 | train_mse=61.128483 | params=     144
+union_lp         | test_mse=70.465950 | val_mse=61.880840 | train_mse=60.909847 | params=     144
+sffa             | test_mse=70.121902 | val_mse=61.275597 | train_mse=60.069641 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=50, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.827087 | val_mse=60.647243 | train_mse=59.379662 | params=    2952
+sub_lp           | test_mse=69.415359 | val_mse=60.163372 | train_mse=59.252335 | params=     144
+dk_lp            | test_mse=69.316963 | val_mse=59.812672 | train_mse=58.696877 | params=    1080
+rg_lp            | test_mse=69.471336 | val_mse=60.246014 | train_mse=59.336128 | params=     432
+rg_alg           | test_mse=69.157211 | val_mse=59.832195 | train_mse=58.853016 | params=    3996
+kron_lp          | test_mse=69.440750 | val_mse=60.096085 | train_mse=59.118347 | params=     144
+union_lp         | test_mse=69.659813 | val_mse=60.048508 | train_mse=58.973541 | params=     144
+sffa             | test_mse=69.106743 | val_mse=59.408154 | train_mse=58.197525 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=50, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.439606 | val_mse=60.505047 | train_mse=59.116646 | params=    3708
+sub_lp           | test_mse=68.984756 | val_mse=60.023823 | train_mse=58.953693 | params=     144
+dk_lp            | test_mse=68.874718 | val_mse=59.701492 | train_mse=58.479523 | params=    1080
+rg_lp            | test_mse=69.115540 | val_mse=60.167274 | train_mse=59.074844 | params=     432
+rg_alg           | test_mse=68.706345 | val_mse=59.624290 | train_mse=58.527084 | params=    3996
+kron_lp          | test_mse=69.017296 | val_mse=59.997688 | train_mse=58.875904 | params=     144
+union_lp         | test_mse=69.252495 | val_mse=60.032322 | train_mse=58.792194 | params=     144
+sffa             | test_mse=68.586578 | val_mse=59.348129 | train_mse=58.077541 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=50, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.520226 | val_mse=59.791542 | train_mse=58.656967 | params=    4464
+sub_lp           | test_mse=68.994293 | val_mse=59.315033 | train_mse=58.436924 | params=     144
+dk_lp            | test_mse=68.872757 | val_mse=59.006145 | train_mse=58.018433 | params=    1080
+rg_lp            | test_mse=69.129707 | val_mse=59.473946 | train_mse=58.590900 | params=     432
+rg_alg           | test_mse=68.720833 | val_mse=59.027569 | train_mse=58.126808 | params=    3996
+kron_lp          | test_mse=69.025894 | val_mse=59.318542 | train_mse=58.397583 | params=     144
+union_lp         | test_mse=69.266045 | val_mse=59.359852 | train_mse=58.339977 | params=     144
+sffa             | test_mse=68.611229 | val_mse=58.701321 | train_mse=57.714043 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=50, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.299683 | val_mse=60.573677 | train_mse=59.019772 | params=    5184
+sub_lp           | test_mse=69.728027 | val_mse=60.005688 | train_mse=58.726871 | params=     144
+dk_lp            | test_mse=69.583488 | val_mse=59.683407 | train_mse=58.308750 | params=    1080
+rg_lp            | test_mse=69.860466 | val_mse=60.155315 | train_mse=58.862217 | params=     432
+rg_alg           | test_mse=69.573616 | val_mse=59.804668 | train_mse=58.541935 | params=    3996
+kron_lp          | test_mse=69.731087 | val_mse=60.008488 | train_mse=58.692516 | params=     144
+union_lp         | test_mse=70.026283 | val_mse=60.096222 | train_mse=58.681740 | params=     144
+sffa             | test_mse=69.339684 | val_mse=59.412922 | train_mse=58.013863 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=51, p_visible=0.3, P=12, H=3 =====
+N=207 n0=62 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=67.640823 | val_mse=58.209267 | train_mse=56.744377 | params=    2232
+sub_lp           | test_mse=67.415192 | val_mse=58.015961 | train_mse=56.818104 | params=     144
+dk_lp            | test_mse=67.255524 | val_mse=57.679924 | train_mse=56.196861 | params=    1080
+rg_lp            | test_mse=67.440331 | val_mse=58.031776 | train_mse=56.841114 | params=     432
+rg_alg           | test_mse=67.246010 | val_mse=57.769474 | train_mse=56.292400 | params=    3996
+kron_lp          | test_mse=67.352798 | val_mse=57.938690 | train_mse=56.617794 | params=     144
+union_lp         | test_mse=67.489761 | val_mse=57.949936 | train_mse=56.456600 | params=     144
+sffa             | test_mse=67.239098 | val_mse=57.422890 | train_mse=55.671307 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=51, p_visible=0.4, P=12, H=3 =====
+N=207 n0=82 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=69.056175 | val_mse=60.232834 | train_mse=58.301704 | params=    2952
+sub_lp           | test_mse=68.681580 | val_mse=59.859142 | train_mse=58.253971 | params=     144
+dk_lp            | test_mse=68.510254 | val_mse=59.509487 | train_mse=57.685242 | params=    1080
+rg_lp            | test_mse=68.715927 | val_mse=59.916019 | train_mse=58.273342 | params=     432
+rg_alg           | test_mse=68.380684 | val_mse=59.700943 | train_mse=57.879513 | params=    3996
+kron_lp          | test_mse=68.655708 | val_mse=59.797222 | train_mse=58.107605 | params=     144
+union_lp         | test_mse=68.866882 | val_mse=59.834450 | train_mse=58.027782 | params=     144
+sffa             | test_mse=68.216637 | val_mse=59.230309 | train_mse=57.230064 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=51, p_visible=0.5, P=12, H=3 =====
+N=207 n0=103 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=70.999367 | val_mse=61.694748 | train_mse=60.004059 | params=    3708
+sub_lp           | test_mse=70.500374 | val_mse=61.225929 | train_mse=59.856731 | params=     144
+dk_lp            | test_mse=70.327820 | val_mse=60.940151 | train_mse=59.314983 | params=    1080
+rg_lp            | test_mse=70.596451 | val_mse=61.326397 | train_mse=59.939442 | params=     432
+rg_alg           | test_mse=70.238632 | val_mse=60.897137 | train_mse=59.474007 | params=    3996
+kron_lp          | test_mse=70.492653 | val_mse=61.172428 | train_mse=59.754280 | params=     144
+union_lp         | test_mse=70.733742 | val_mse=61.264942 | train_mse=59.671307 | params=     144
+sffa             | test_mse=70.117210 | val_mse=60.705944 | train_mse=58.880966 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=51, p_visible=0.6, P=12, H=3 =====
+N=207 n0=124 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=71.601814 | val_mse=62.613529 | train_mse=60.899437 | params=    4464
+sub_lp           | test_mse=70.964691 | val_mse=62.025726 | train_mse=60.649494 | params=     144
+dk_lp            | test_mse=70.820137 | val_mse=61.707699 | train_mse=60.111095 | params=    1080
+rg_lp            | test_mse=71.157616 | val_mse=62.222065 | train_mse=60.840885 | params=     432
+rg_alg           | test_mse=70.818512 | val_mse=61.845001 | train_mse=60.405224 | params=    3996
+kron_lp          | test_mse=70.942436 | val_mse=61.975216 | train_mse=60.553932 | params=     144
+union_lp         | test_mse=71.306404 | val_mse=62.155464 | train_mse=60.556995 | params=     144
+sffa             | test_mse=70.521004 | val_mse=61.400967 | train_mse=59.681374 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+
+===== horizon seed=51, p_visible=0.7, P=12, H=3 =====
+N=207 n0=144 raw_T=34272 clean_T=34272 missing_rows=0 split_ratios=0.7/0.1/0.2
+windows train/val/test=23976/3413/6841 | dropped_gap_windows train/val/test=0/0/0
+loss_type=mse | poly_degree=3 | sffa_k=10 sffa_r=2 | rg_p0=0.9 | ridge=0 | sfl_ridge=0
+----------------------------------------------------------------------------------------------------------------
+ar               | test_mse=71.471413 | val_mse=62.117657 | train_mse=60.325836 | params=    5184
+sub_lp           | test_mse=70.765182 | val_mse=61.497612 | train_mse=60.042770 | params=     144
+dk_lp            | test_mse=70.644051 | val_mse=61.199200 | train_mse=59.572025 | params=    1080
+rg_lp            | test_mse=70.949646 | val_mse=61.679298 | train_mse=60.202473 | params=     432
+rg_alg           | test_mse=70.596222 | val_mse=61.275723 | train_mse=59.820381 | params=    3996
+kron_lp          | test_mse=70.738472 | val_mse=61.459549 | train_mse=60.061184 | params=     144
+union_lp         | test_mse=71.133705 | val_mse=61.625614 | train_mse=59.997849 | params=     144
+sffa             | test_mse=70.392212 | val_mse=60.943420 | train_mse=59.213860 | params=    3996
+----------------------------------------------------------------------------------------------------------------
+Failed runs: []

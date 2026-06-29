@@ -1,0 +1,925 @@
+===== p sweep 1/5: p=0.3, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+[auto_budget_k] p=0.3, N=319, N0=96, r=2, selected k=9, SFFA params=91
+SFL Laplacian primitive mode: symmetric normalized
+
+[p=0.3 | run 1/10] seed=1
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 2/10] seed=2
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 3/10] seed=3
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 4/10] seed=4
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 5/10] seed=5
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 6/10] seed=6
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 7/10] seed=7
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 8/10] seed=8
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 9/10] seed=9
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.3 | run 10/10] seed=10
+[SFFA guard] random_group_algebra: q=9, r=2, basis_size=91, threshold=1000
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.3
+p_values                : 0.3,0.4,0.5,0.6,0.7
+p_missing               : 0.1
+methods                 : asymptotic_subgraph,numerical_lmmse,induced_poly_lim,kron_poly_lim,union_poly_lim,distance_laplacian_poly,random_group_algebra,pure_sffa
+rmax                    : 6
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: True
+sffa_distance_k         : 9
+auto_budget_k           : True
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : True
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 96
+observed nodes in V0     : 64
+missing nodes in V0      : 32
+idx0 first 20            : [2, 6, 9, 13, 14, 15, 22, 34, 35, 36, 37, 40, 47, 51, 56, 60, 63, 64, 67, 76]
+obs_global first 20      : [2, 9, 14, 15, 35, 36, 40, 47, 51, 56, 63, 67, 76, 78, 86, 93, 106, 108, 109, 110]
+miss_global first 20     : [6, 13, 22, 34, 37, 60, 64, 87, 92, 118, 145, 161, 163, 165, 166, 167, 185, 197, 198, 209]
+
+Learned SFL operators
+---------------------
+induced_poly_lim_r2              | params=   3 | train missing MSE=2.219078e-02 | ||F||_F=3.332929e+00
+induced_poly_lim_r3              | params=   4 | train missing MSE=2.177836e-02 | ||F||_F=3.273103e+00
+induced_poly_lim_r4              | params=   5 | train missing MSE=2.178536e-02 | ||F||_F=3.274850e+00
+induced_poly_lim_r5              | params=   6 | train missing MSE=2.178612e-02 | ||F||_F=3.274985e+00
+induced_poly_lim_r6              | params=   7 | train missing MSE=2.178617e-02 | ||F||_F=3.274993e+00
+kron_poly_lim_r2                 | params=   3 | train missing MSE=1.299573e-02 | ||F||_F=2.296671e+00
+kron_poly_lim_r3                 | params=   4 | train missing MSE=1.249881e-02 | ||F||_F=1.915856e+00
+kron_poly_lim_r4                 | params=   5 | train missing MSE=1.249567e-02 | ||F||_F=1.917652e+00
+kron_poly_lim_r5                 | params=   6 | train missing MSE=1.249539e-02 | ||F||_F=1.917616e+00
+kron_poly_lim_r6                 | params=   7 | train missing MSE=1.249537e-02 | ||F||_F=1.917652e+00
+union_poly_lim_r2                | params=   3 | train missing MSE=1.479621e-02 | ||F||_F=8.056222e-01
+union_poly_lim_r3                | params=   4 | train missing MSE=1.479479e-02 | ||F||_F=8.072857e-01
+union_poly_lim_r4                | params=   5 | train missing MSE=1.479464e-02 | ||F||_F=8.073511e-01
+union_poly_lim_r5                | params=   6 | train missing MSE=1.479464e-02 | ||F||_F=8.073529e-01
+union_poly_lim_r6                | params=   7 | train missing MSE=1.479464e-02 | ||F||_F=8.073537e-01
+distance_laplacian_poly          | params=  19 | train missing MSE=9.295850e-03 | ||F||_F=2.119717e+00
+random_group_algebra             | params=  91 | train missing MSE=1.547533e-02 | ||F||_F=4.145510e+00
+pure_sffa                        | params=  91 | train missing MSE=7.031760e-03 | ||F||_F=2.991058e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Asymptotic subgraph numerical LMMSE  |              0.0650±0.0047 |               4.250934e-03
+Subgraph numerical LMMSE             |              0.0930±0.0071 |               8.686774e-03
+Distance-1..9 Laplacian polynomial (deg≤2) |              0.1092±0.0130 |               1.208097e-02
+Random-group algebra (q=9, r=2)      |              0.1457±0.0212 |               2.163642e-02
+Pure distance-based SFFA (k=9, r=2)  |              0.0886±0.0062 |               7.888597e-03
+Induced Laplacian polynomial LIM (deg≤2) |              0.1718±0.0211 |               2.990272e-02
+Induced Laplacian polynomial LIM (deg≤3) |              0.1681±0.0200 |               2.863291e-02
+Induced Laplacian polynomial LIM (deg≤4) |              0.1682±0.0200 |               2.864834e-02
+Induced Laplacian polynomial LIM (deg≤5) |              0.1682±0.0200 |               2.864976e-02
+Induced Laplacian polynomial LIM (deg≤6) |              0.1682±0.0200 |               2.864985e-02
+Kron Laplacian polynomial LIM (deg≤2) |              0.1245±0.0166 |               1.575105e-02
+Kron Laplacian polynomial LIM (deg≤3) |              0.1197±0.0159 |               1.455874e-02
+Kron Laplacian polynomial LIM (deg≤4) |              0.1198±0.0159 |               1.457236e-02
+Kron Laplacian polynomial LIM (deg≤5) |              0.1198±0.0159 |               1.457316e-02
+Kron Laplacian polynomial LIM (deg≤6) |              0.1198±0.0159 |               1.457320e-02
+1..9-union Laplacian polynomial LIM (deg≤2) |              0.1245±0.0085 |               1.556110e-02
+1..9-union Laplacian polynomial LIM (deg≤3) |              0.1233±0.0084 |               1.526193e-02
+1..9-union Laplacian polynomial LIM (deg≤4) |              0.1233±0.0084 |               1.525940e-02
+1..9-union Laplacian polynomial LIM (deg≤5) |              0.1233±0.0084 |               1.525924e-02
+1..9-union Laplacian polynomial LIM (deg≤6) |              0.1233±0.0084 |               1.525924e-02
+Saved graph plot to: DSSO\outputs\graph_subgraph_reconstruction_layout_20260628_150334_p0p3.png
+Saved RMSE plot to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p3.png
+Saved experiment record to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p3.json
+
+===== p sweep 2/5: p=0.4, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+[auto_budget_k] p=0.4, N=319, N0=128, r=2, selected k=10, SFFA params=111
+SFL Laplacian primitive mode: symmetric normalized
+
+[p=0.4 | run 1/10] seed=1
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 2/10] seed=2
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 3/10] seed=3
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 4/10] seed=4
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 5/10] seed=5
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 6/10] seed=6
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 7/10] seed=7
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 8/10] seed=8
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 9/10] seed=9
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.4 | run 10/10] seed=10
+[SFFA guard] random_group_algebra: q=10, r=2, basis_size=111, threshold=1000
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.4
+p_values                : 0.3,0.4,0.5,0.6,0.7
+p_missing               : 0.1
+methods                 : asymptotic_subgraph,numerical_lmmse,induced_poly_lim,kron_poly_lim,union_poly_lim,distance_laplacian_poly,random_group_algebra,pure_sffa
+rmax                    : 6
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: True
+sffa_distance_k         : 10
+auto_budget_k           : True
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : True
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 128
+observed nodes in V0     : 96
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 12, 13, 14, 15, 18, 19, 21, 22, 24, 26, 28, 30, 31, 34, 35]
+obs_global first 20      : [2, 9, 12, 13, 14, 15, 18, 19, 22, 24, 26, 28, 30, 31, 35, 36, 37, 40, 44, 47]
+miss_global first 20     : [0, 6, 7, 21, 34, 51, 57, 67, 93, 97, 108, 110, 111, 118, 132, 138, 139, 161, 167, 185]
+
+Learned SFL operators
+---------------------
+induced_poly_lim_r2              | params=   3 | train missing MSE=2.923553e-02 | ||F||_F=3.012083e+00
+induced_poly_lim_r3              | params=   4 | train missing MSE=2.703143e-02 | ||F||_F=2.641283e+00
+induced_poly_lim_r4              | params=   5 | train missing MSE=2.705083e-02 | ||F||_F=2.643898e+00
+induced_poly_lim_r5              | params=   6 | train missing MSE=2.705216e-02 | ||F||_F=2.644072e+00
+induced_poly_lim_r6              | params=   7 | train missing MSE=2.705222e-02 | ||F||_F=2.644079e+00
+kron_poly_lim_r2                 | params=   3 | train missing MSE=2.167773e-02 | ||F||_F=1.881277e+00
+kron_poly_lim_r3                 | params=   4 | train missing MSE=1.723865e-02 | ||F||_F=2.055075e+00
+kron_poly_lim_r4                 | params=   5 | train missing MSE=1.726468e-02 | ||F||_F=2.059780e+00
+kron_poly_lim_r5                 | params=   6 | train missing MSE=1.726582e-02 | ||F||_F=2.060043e+00
+kron_poly_lim_r6                 | params=   7 | train missing MSE=1.726585e-02 | ||F||_F=2.060052e+00
+union_poly_lim_r2                | params=   3 | train missing MSE=1.638414e-02 | ||F||_F=7.851057e-01
+union_poly_lim_r3                | params=   4 | train missing MSE=1.638405e-02 | ||F||_F=7.851385e-01
+union_poly_lim_r4                | params=   5 | train missing MSE=1.638404e-02 | ||F||_F=7.851338e-01
+union_poly_lim_r5                | params=   6 | train missing MSE=1.638404e-02 | ||F||_F=7.851338e-01
+union_poly_lim_r6                | params=   7 | train missing MSE=1.638404e-02 | ||F||_F=7.851361e-01
+distance_laplacian_poly          | params=  21 | train missing MSE=1.242316e-02 | ||F||_F=2.067347e+00
+random_group_algebra             | params= 111 | train missing MSE=7.923505e-03 | ||F||_F=5.176739e+00
+pure_sffa                        | params= 111 | train missing MSE=6.683966e-03 | ||F||_F=2.864352e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Asymptotic subgraph numerical LMMSE  |              0.0576±0.0033 |               3.322446e-03
+Subgraph numerical LMMSE             |              0.0982±0.0081 |               9.705407e-03
+Distance-1..10 Laplacian polynomial (deg≤2) |              0.0997±0.0072 |               9.986817e-03
+Random-group algebra (q=10, r=2)     |              0.1127±0.0173 |               1.297361e-02
+Pure distance-based SFFA (k=10, r=2) |              0.0837±0.0055 |               7.025901e-03
+Induced Laplacian polynomial LIM (deg≤2) |              0.1529±0.0119 |               2.351597e-02
+Induced Laplacian polynomial LIM (deg≤3) |              0.1468±0.0114 |               2.167814e-02
+Induced Laplacian polynomial LIM (deg≤4) |              0.1469±0.0114 |               2.169732e-02
+Induced Laplacian polynomial LIM (deg≤5) |              0.1469±0.0114 |               2.169861e-02
+Induced Laplacian polynomial LIM (deg≤6) |              0.1469±0.0114 |               2.169868e-02
+Kron Laplacian polynomial LIM (deg≤2) |              0.1198±0.0109 |               1.446277e-02
+Kron Laplacian polynomial LIM (deg≤3) |              0.1130±0.0087 |               1.283769e-02
+Kron Laplacian polynomial LIM (deg≤4) |              0.1130±0.0087 |               1.284612e-02
+Kron Laplacian polynomial LIM (deg≤5) |              0.1130±0.0087 |               1.284653e-02
+Kron Laplacian polynomial LIM (deg≤6) |              0.1130±0.0087 |               1.284653e-02
+1..10-union Laplacian polynomial LIM (deg≤2) |              0.1199±0.0064 |               1.441436e-02
+1..10-union Laplacian polynomial LIM (deg≤3) |              0.1199±0.0064 |               1.441348e-02
+1..10-union Laplacian polynomial LIM (deg≤4) |              0.1199±0.0064 |               1.441344e-02
+1..10-union Laplacian polynomial LIM (deg≤5) |              0.1199±0.0064 |               1.441344e-02
+1..10-union Laplacian polynomial LIM (deg≤6) |              0.1199±0.0064 |               1.441344e-02
+Saved graph plot to: DSSO\outputs\graph_subgraph_reconstruction_layout_20260628_150334_p0p4.png
+Saved RMSE plot to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p4.png
+Saved experiment record to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p4.json
+
+===== p sweep 3/5: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+[auto_budget_k] p=0.5, N=319, N0=160, r=2, selected k=12, SFFA params=157
+SFL Laplacian primitive mode: symmetric normalized
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] random_group_algebra: q=12, r=2, basis_size=157, threshold=1000
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.3,0.4,0.5,0.6,0.7
+p_missing               : 0.1
+methods                 : asymptotic_subgraph,numerical_lmmse,induced_poly_lim,kron_poly_lim,union_poly_lim,distance_laplacian_poly,random_group_algebra,pure_sffa
+rmax                    : 6
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: True
+sffa_distance_k         : 12
+auto_budget_k           : True
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : True
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+induced_poly_lim_r2              | params=   3 | train missing MSE=1.902766e-02 | ||F||_F=2.762610e+00
+induced_poly_lim_r3              | params=   4 | train missing MSE=1.553622e-02 | ||F||_F=2.388124e+00
+induced_poly_lim_r4              | params=   5 | train missing MSE=1.558632e-02 | ||F||_F=2.390497e+00
+induced_poly_lim_r5              | params=   6 | train missing MSE=1.558888e-02 | ||F||_F=2.390569e+00
+induced_poly_lim_r6              | params=   7 | train missing MSE=1.558896e-02 | ||F||_F=2.390563e+00
+kron_poly_lim_r2                 | params=   3 | train missing MSE=1.183032e-02 | ||F||_F=2.006796e+00
+kron_poly_lim_r3                 | params=   4 | train missing MSE=1.023547e-02 | ||F||_F=1.768751e+00
+kron_poly_lim_r4                 | params=   5 | train missing MSE=1.023303e-02 | ||F||_F=1.772846e+00
+kron_poly_lim_r5                 | params=   6 | train missing MSE=1.023294e-02 | ||F||_F=1.772964e+00
+kron_poly_lim_r6                 | params=   7 | train missing MSE=1.023294e-02 | ||F||_F=1.772740e+00
+union_poly_lim_r2                | params=   3 | train missing MSE=1.456797e-02 | ||F||_F=6.859251e-01
+union_poly_lim_r3                | params=   4 | train missing MSE=1.456798e-02 | ||F||_F=6.859440e-01
+union_poly_lim_r4                | params=   5 | train missing MSE=1.456797e-02 | ||F||_F=6.859360e-01
+union_poly_lim_r5                | params=   6 | train missing MSE=1.456797e-02 | ||F||_F=6.859295e-01
+union_poly_lim_r6                | params=   7 | train missing MSE=1.456797e-02 | ||F||_F=6.859295e-01
+distance_laplacian_poly          | params=  25 | train missing MSE=8.742240e-03 | ||F||_F=2.125415e+00
+random_group_algebra             | params= 157 | train missing MSE=7.393471e-03 | ||F||_F=5.121892e+00
+pure_sffa                        | params= 157 | train missing MSE=5.639596e-03 | ||F||_F=3.281426e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Asymptotic subgraph numerical LMMSE  |              0.0515±0.0020 |               2.657484e-03
+Subgraph numerical LMMSE             |              0.1060±0.0044 |               1.125439e-02
+Distance-1..12 Laplacian polynomial (deg≤2) |              0.0994±0.0097 |               9.960598e-03
+Random-group algebra (q=12, r=2)     |              0.0898±0.0219 |               8.498889e-03
+Pure distance-based SFFA (k=12, r=2) |              0.0813±0.0062 |               6.642302e-03
+Induced Laplacian polynomial LIM (deg≤2) |              0.1354±0.0239 |               1.884654e-02
+Induced Laplacian polynomial LIM (deg≤3) |              0.1292±0.0239 |               1.720143e-02
+Induced Laplacian polynomial LIM (deg≤4) |              0.1292±0.0240 |               1.719989e-02
+Induced Laplacian polynomial LIM (deg≤5) |              0.1292±0.0240 |               1.720074e-02
+Induced Laplacian polynomial LIM (deg≤6) |              0.1292±0.0240 |               1.720080e-02
+Kron Laplacian polynomial LIM (deg≤2) |              0.1217±0.0165 |               1.505846e-02
+Kron Laplacian polynomial LIM (deg≤3) |              0.1152±0.0146 |               1.346770e-02
+Kron Laplacian polynomial LIM (deg≤4) |              0.1152±0.0146 |               1.347276e-02
+Kron Laplacian polynomial LIM (deg≤5) |              0.1152±0.0146 |               1.347314e-02
+Kron Laplacian polynomial LIM (deg≤6) |              0.1152±0.0146 |               1.347294e-02
+1..12-union Laplacian polynomial LIM (deg≤2) |              0.1244±0.0090 |               1.555632e-02
+1..12-union Laplacian polynomial LIM (deg≤3) |              0.1244±0.0090 |               1.555497e-02
+1..12-union Laplacian polynomial LIM (deg≤4) |              0.1244±0.0090 |               1.555493e-02
+1..12-union Laplacian polynomial LIM (deg≤5) |              0.1244±0.0090 |               1.555492e-02
+1..12-union Laplacian polynomial LIM (deg≤6) |              0.1244±0.0090 |               1.555493e-02
+Saved graph plot to: DSSO\outputs\graph_subgraph_reconstruction_layout_20260628_150334_p0p5.png
+Saved RMSE plot to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p5.png
+Saved experiment record to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p5.json
+
+===== p sweep 4/5: p=0.6, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+[auto_budget_k] p=0.6, N=319, N0=191, r=2, selected k=13, SFFA params=183
+SFL Laplacian primitive mode: symmetric normalized
+
+[p=0.6 | run 1/10] seed=1
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 2/10] seed=2
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 3/10] seed=3
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 4/10] seed=4
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 5/10] seed=5
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 6/10] seed=6
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 7/10] seed=7
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 8/10] seed=8
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 9/10] seed=9
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+[p=0.6 | run 10/10] seed=10
+[SFFA guard] random_group_algebra: q=13, r=2, basis_size=183, threshold=1000
+[SFFA guard] pure_sffa: q=13, r=2, basis_size=183, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.6
+p_values                : 0.3,0.4,0.5,0.6,0.7
+p_missing               : 0.1
+methods                 : asymptotic_subgraph,numerical_lmmse,induced_poly_lim,kron_poly_lim,union_poly_lim,distance_laplacian_poly,random_group_algebra,pure_sffa
+rmax                    : 6
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: True
+sffa_distance_k         : 13
+auto_budget_k           : True
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : True
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 191
+observed nodes in V0     : 159
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 25, 26, 27, 28]
+obs_global first 20      : [6, 9, 11, 12, 13, 14, 15, 16, 18, 21, 22, 25, 26, 27, 28, 29, 30, 31, 33, 34]
+miss_global first 20     : [0, 2, 7, 19, 24, 32, 40, 42, 56, 59, 60, 68, 76, 81, 85, 100, 111, 126, 166, 170]
+
+Learned SFL operators
+---------------------
+induced_poly_lim_r2              | params=   3 | train missing MSE=2.198221e-02 | ||F||_F=2.592528e+00
+induced_poly_lim_r3              | params=   4 | train missing MSE=2.034460e-02 | ||F||_F=2.136629e+00
+induced_poly_lim_r4              | params=   5 | train missing MSE=2.037374e-02 | ||F||_F=2.140603e+00
+induced_poly_lim_r5              | params=   6 | train missing MSE=2.037474e-02 | ||F||_F=2.140850e+00
+induced_poly_lim_r6              | params=   7 | train missing MSE=2.037477e-02 | ||F||_F=2.140739e+00
+kron_poly_lim_r2                 | params=   3 | train missing MSE=1.501698e-02 | ||F||_F=1.971814e+00
+kron_poly_lim_r3                 | params=   4 | train missing MSE=1.255241e-02 | ||F||_F=1.757894e+00
+kron_poly_lim_r4                 | params=   5 | train missing MSE=1.256346e-02 | ||F||_F=1.760664e+00
+kron_poly_lim_r5                 | params=   6 | train missing MSE=1.256382e-02 | ||F||_F=1.760524e+00
+kron_poly_lim_r6                 | params=   7 | train missing MSE=1.256383e-02 | ||F||_F=1.760638e+00
+union_poly_lim_r2                | params=   3 | train missing MSE=1.405403e-02 | ||F||_F=6.759558e-01
+union_poly_lim_r3                | params=   4 | train missing MSE=1.405361e-02 | ||F||_F=6.765133e-01
+union_poly_lim_r4                | params=   5 | train missing MSE=1.405359e-02 | ||F||_F=6.765397e-01
+union_poly_lim_r5                | params=   6 | train missing MSE=1.405359e-02 | ||F||_F=6.765393e-01
+union_poly_lim_r6                | params=   7 | train missing MSE=1.405359e-02 | ||F||_F=6.765418e-01
+distance_laplacian_poly          | params=  27 | train missing MSE=9.799314e-03 | ||F||_F=1.896299e+00
+random_group_algebra             | params= 183 | train missing MSE=6.713535e-03 | ||F||_F=4.890822e+00
+pure_sffa                        | params= 183 | train missing MSE=5.587463e-03 | ||F||_F=3.237577e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Asymptotic subgraph numerical LMMSE  |              0.0449±0.0034 |               2.029257e-03
+Subgraph numerical LMMSE             |              0.1189±0.0094 |               1.421693e-02
+Distance-1..13 Laplacian polynomial (deg≤2) |              0.0939±0.0054 |               8.836043e-03
+Random-group algebra (q=13, r=2)     |              0.0738±0.0046 |               5.467281e-03
+Pure distance-based SFFA (k=13, r=2) |              0.0756±0.0040 |               5.734193e-03
+Induced Laplacian polynomial LIM (deg≤2) |              0.1177±0.0117 |               1.398798e-02
+Induced Laplacian polynomial LIM (deg≤3) |              0.1140±0.0110 |               1.309688e-02
+Induced Laplacian polynomial LIM (deg≤4) |              0.1140±0.0110 |               1.310073e-02
+Induced Laplacian polynomial LIM (deg≤5) |              0.1140±0.0110 |               1.310086e-02
+Induced Laplacian polynomial LIM (deg≤6) |              0.1140±0.0110 |               1.310083e-02
+Kron Laplacian polynomial LIM (deg≤2) |              0.1086±0.0109 |               1.191133e-02
+Kron Laplacian polynomial LIM (deg≤3) |              0.1076±0.0100 |               1.167053e-02
+Kron Laplacian polynomial LIM (deg≤4) |              0.1076±0.0100 |               1.167183e-02
+Kron Laplacian polynomial LIM (deg≤5) |              0.1076±0.0100 |               1.167186e-02
+Kron Laplacian polynomial LIM (deg≤6) |              0.1076±0.0100 |               1.167187e-02
+1..13-union Laplacian polynomial LIM (deg≤2) |              0.1251±0.0070 |               1.568409e-02
+1..13-union Laplacian polynomial LIM (deg≤3) |              0.1251±0.0070 |               1.568460e-02
+1..13-union Laplacian polynomial LIM (deg≤4) |              0.1251±0.0070 |               1.568460e-02
+1..13-union Laplacian polynomial LIM (deg≤5) |              0.1251±0.0070 |               1.568460e-02
+1..13-union Laplacian polynomial LIM (deg≤6) |              0.1251±0.0070 |               1.568460e-02
+Saved graph plot to: DSSO\outputs\graph_subgraph_reconstruction_layout_20260628_150334_p0p6.png
+Saved RMSE plot to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p6.png
+Saved experiment record to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p6.json
+
+===== p sweep 5/5: p=0.7, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+[auto_budget_k] p=0.7, N=319, N0=223, r=2, selected k=14, SFFA params=211
+SFL Laplacian primitive mode: symmetric normalized
+
+[p=0.7 | run 1/10] seed=1
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 2/10] seed=2
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 3/10] seed=3
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 4/10] seed=4
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 5/10] seed=5
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 6/10] seed=6
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 7/10] seed=7
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 8/10] seed=8
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 9/10] seed=9
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+[p=0.7 | run 10/10] seed=10
+[SFFA guard] random_group_algebra: q=14, r=2, basis_size=211, threshold=1000
+[SFFA guard] pure_sffa: q=14, r=2, basis_size=211, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.7
+p_values                : 0.3,0.4,0.5,0.6,0.7
+p_missing               : 0.1
+methods                 : asymptotic_subgraph,numerical_lmmse,induced_poly_lim,kron_poly_lim,union_poly_lim,distance_laplacian_poly,random_group_algebra,pure_sffa
+rmax                    : 6
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: True
+sffa_distance_k         : 14
+auto_budget_k           : True
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : True
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 223
+observed nodes in V0     : 191
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 25, 26]
+obs_global first 20      : [0, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 21, 22, 24, 25, 26, 27]
+miss_global first 20     : [18, 32, 38, 78, 87, 113, 117, 126, 135, 150, 163, 167, 170, 182, 186, 200, 217, 230, 233, 235]
+
+Learned SFL operators
+---------------------
+induced_poly_lim_r2              | params=   3 | train missing MSE=1.100392e-02 | ||F||_F=2.809236e+00
+induced_poly_lim_r3              | params=   4 | train missing MSE=1.100561e-02 | ||F||_F=2.810539e+00
+induced_poly_lim_r4              | params=   5 | train missing MSE=1.100564e-02 | ||F||_F=2.810563e+00
+induced_poly_lim_r5              | params=   6 | train missing MSE=1.100564e-02 | ||F||_F=2.810565e+00
+induced_poly_lim_r6              | params=   7 | train missing MSE=1.100564e-02 | ||F||_F=2.810563e+00
+kron_poly_lim_r2                 | params=   3 | train missing MSE=1.077525e-02 | ||F||_F=2.254902e+00
+kron_poly_lim_r3                 | params=   4 | train missing MSE=1.077718e-02 | ||F||_F=2.256341e+00
+kron_poly_lim_r4                 | params=   5 | train missing MSE=1.077720e-02 | ||F||_F=2.256357e+00
+kron_poly_lim_r5                 | params=   6 | train missing MSE=1.077720e-02 | ||F||_F=2.256359e+00
+kron_poly_lim_r6                 | params=   7 | train missing MSE=1.077720e-02 | ||F||_F=2.256359e+00
+union_poly_lim_r2                | params=   3 | train missing MSE=1.494277e-02 | ||F||_F=5.120209e-01
+union_poly_lim_r3                | params=   4 | train missing MSE=1.494084e-02 | ||F||_F=5.116338e-01
+union_poly_lim_r4                | params=   5 | train missing MSE=1.494081e-02 | ||F||_F=5.116342e-01
+union_poly_lim_r5                | params=   6 | train missing MSE=1.494081e-02 | ||F||_F=5.116349e-01
+union_poly_lim_r6                | params=   7 | train missing MSE=1.494080e-02 | ||F||_F=5.116414e-01
+distance_laplacian_poly          | params=  29 | train missing MSE=7.035679e-03 | ||F||_F=2.558569e+00
+random_group_algebra             | params= 211 | train missing MSE=4.736787e-03 | ||F||_F=4.402878e+00
+pure_sffa                        | params= 211 | train missing MSE=4.530851e-03 | ||F||_F=3.569072e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Asymptotic subgraph numerical LMMSE  |              0.0396±0.0023 |               1.572983e-03
+Subgraph numerical LMMSE             |              0.1363±0.0122 |               1.871640e-02
+Distance-1..14 Laplacian polynomial (deg≤2) |              0.0927±0.0083 |               8.662563e-03
+Random-group algebra (q=14, r=2)     |              0.0773±0.0158 |               6.200245e-03
+Pure distance-based SFFA (k=14, r=2) |              0.0745±0.0061 |               5.582125e-03
+Induced Laplacian polynomial LIM (deg≤2) |              0.1181±0.0196 |               1.430159e-02
+Induced Laplacian polynomial LIM (deg≤3) |              0.1160±0.0187 |               1.376752e-02
+Induced Laplacian polynomial LIM (deg≤4) |              0.1160±0.0187 |               1.376981e-02
+Induced Laplacian polynomial LIM (deg≤5) |              0.1160±0.0187 |               1.376988e-02
+Induced Laplacian polynomial LIM (deg≤6) |              0.1160±0.0187 |               1.376988e-02
+Kron Laplacian polynomial LIM (deg≤2) |              0.1115±0.0143 |               1.262480e-02
+Kron Laplacian polynomial LIM (deg≤3) |              0.1103±0.0139 |               1.234466e-02
+Kron Laplacian polynomial LIM (deg≤4) |              0.1103±0.0139 |               1.234445e-02
+Kron Laplacian polynomial LIM (deg≤5) |              0.1103±0.0139 |               1.234445e-02
+Kron Laplacian polynomial LIM (deg≤6) |              0.1103±0.0139 |               1.234445e-02
+1..14-union Laplacian polynomial LIM (deg≤2) |              0.1247±0.0090 |               1.561308e-02
+1..14-union Laplacian polynomial LIM (deg≤3) |              0.1247±0.0090 |               1.561200e-02
+1..14-union Laplacian polynomial LIM (deg≤4) |              0.1247±0.0090 |               1.561197e-02
+1..14-union Laplacian polynomial LIM (deg≤5) |              0.1247±0.0090 |               1.561197e-02
+1..14-union Laplacian polynomial LIM (deg≤6) |              0.1247±0.0090 |               1.561197e-02
+Saved graph plot to: DSSO\outputs\graph_subgraph_reconstruction_layout_20260628_150334_p0p7.png
+Saved RMSE plot to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p7.png
+Saved experiment record to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_p0p7.json
+=== p-sweep averaged RMSE summary ===
+       p | method                         |            RMSE mean±std |       MSE mean
+-------------------------------------------------------------------------------------
+     0.3 | subgraph_asymptotic_lmmse      |            0.0650±0.0047 |   4.250934e-03
+     0.3 | numerical_lmmse                |            0.0930±0.0071 |   8.686774e-03
+     0.3 | distance_laplacian_poly        |            0.1092±0.0130 |   1.208097e-02
+     0.3 | random_group_algebra           |            0.1457±0.0212 |   2.163642e-02
+     0.3 | pure_sffa                      |            0.0886±0.0062 |   7.888597e-03
+     0.3 | induced_poly_lim_r2            |            0.1718±0.0211 |   2.990272e-02
+     0.3 | induced_poly_lim_r3            |            0.1681±0.0200 |   2.863291e-02
+     0.3 | induced_poly_lim_r4            |            0.1682±0.0200 |   2.864834e-02
+     0.3 | induced_poly_lim_r5            |            0.1682±0.0200 |   2.864976e-02
+     0.3 | induced_poly_lim_r6            |            0.1682±0.0200 |   2.864985e-02
+     0.3 | kron_poly_lim_r2               |            0.1245±0.0166 |   1.575105e-02
+     0.3 | kron_poly_lim_r3               |            0.1197±0.0159 |   1.455874e-02
+     0.3 | kron_poly_lim_r4               |            0.1198±0.0159 |   1.457236e-02
+     0.3 | kron_poly_lim_r5               |            0.1198±0.0159 |   1.457316e-02
+     0.3 | kron_poly_lim_r6               |            0.1198±0.0159 |   1.457320e-02
+     0.3 | union_poly_lim_r2              |            0.1245±0.0085 |   1.556110e-02
+     0.3 | union_poly_lim_r3              |            0.1233±0.0084 |   1.526193e-02
+     0.3 | union_poly_lim_r4              |            0.1233±0.0084 |   1.525940e-02
+     0.3 | union_poly_lim_r5              |            0.1233±0.0084 |   1.525924e-02
+     0.3 | union_poly_lim_r6              |            0.1233±0.0084 |   1.525924e-02
+     0.4 | subgraph_asymptotic_lmmse      |            0.0576±0.0033 |   3.322446e-03
+     0.4 | numerical_lmmse                |            0.0982±0.0081 |   9.705407e-03
+     0.4 | distance_laplacian_poly        |            0.0997±0.0072 |   9.986817e-03
+     0.4 | random_group_algebra           |            0.1127±0.0173 |   1.297361e-02
+     0.4 | pure_sffa                      |            0.0837±0.0055 |   7.025901e-03
+     0.4 | induced_poly_lim_r2            |            0.1529±0.0119 |   2.351597e-02
+     0.4 | induced_poly_lim_r3            |            0.1468±0.0114 |   2.167814e-02
+     0.4 | induced_poly_lim_r4            |            0.1469±0.0114 |   2.169732e-02
+     0.4 | induced_poly_lim_r5            |            0.1469±0.0114 |   2.169861e-02
+     0.4 | induced_poly_lim_r6            |            0.1469±0.0114 |   2.169868e-02
+     0.4 | kron_poly_lim_r2               |            0.1198±0.0109 |   1.446277e-02
+     0.4 | kron_poly_lim_r3               |            0.1130±0.0087 |   1.283769e-02
+     0.4 | kron_poly_lim_r4               |            0.1130±0.0087 |   1.284612e-02
+     0.4 | kron_poly_lim_r5               |            0.1130±0.0087 |   1.284653e-02
+     0.4 | kron_poly_lim_r6               |            0.1130±0.0087 |   1.284653e-02
+     0.4 | union_poly_lim_r2              |            0.1199±0.0064 |   1.441436e-02
+     0.4 | union_poly_lim_r3              |            0.1199±0.0064 |   1.441348e-02
+     0.4 | union_poly_lim_r4              |            0.1199±0.0064 |   1.441344e-02
+     0.4 | union_poly_lim_r5              |            0.1199±0.0064 |   1.441344e-02
+     0.4 | union_poly_lim_r6              |            0.1199±0.0064 |   1.441344e-02
+     0.5 | subgraph_asymptotic_lmmse      |            0.0515±0.0020 |   2.657484e-03
+     0.5 | numerical_lmmse                |            0.1060±0.0044 |   1.125439e-02
+     0.5 | distance_laplacian_poly        |            0.0994±0.0097 |   9.960598e-03
+     0.5 | random_group_algebra           |            0.0898±0.0219 |   8.498889e-03
+     0.5 | pure_sffa                      |            0.0813±0.0062 |   6.642302e-03
+     0.5 | induced_poly_lim_r2            |            0.1354±0.0239 |   1.884654e-02
+     0.5 | induced_poly_lim_r3            |            0.1292±0.0239 |   1.720143e-02
+     0.5 | induced_poly_lim_r4            |            0.1292±0.0240 |   1.719989e-02
+     0.5 | induced_poly_lim_r5            |            0.1292±0.0240 |   1.720074e-02
+     0.5 | induced_poly_lim_r6            |            0.1292±0.0240 |   1.720080e-02
+     0.5 | kron_poly_lim_r2               |            0.1217±0.0165 |   1.505846e-02
+     0.5 | kron_poly_lim_r3               |            0.1152±0.0146 |   1.346770e-02
+     0.5 | kron_poly_lim_r4               |            0.1152±0.0146 |   1.347276e-02
+     0.5 | kron_poly_lim_r5               |            0.1152±0.0146 |   1.347314e-02
+     0.5 | kron_poly_lim_r6               |            0.1152±0.0146 |   1.347294e-02
+     0.5 | union_poly_lim_r2              |            0.1244±0.0090 |   1.555632e-02
+     0.5 | union_poly_lim_r3              |            0.1244±0.0090 |   1.555497e-02
+     0.5 | union_poly_lim_r4              |            0.1244±0.0090 |   1.555493e-02
+     0.5 | union_poly_lim_r5              |            0.1244±0.0090 |   1.555492e-02
+     0.5 | union_poly_lim_r6              |            0.1244±0.0090 |   1.555493e-02
+     0.6 | subgraph_asymptotic_lmmse      |            0.0449±0.0034 |   2.029257e-03
+     0.6 | numerical_lmmse                |            0.1189±0.0094 |   1.421693e-02
+     0.6 | distance_laplacian_poly        |            0.0939±0.0054 |   8.836043e-03
+     0.6 | random_group_algebra           |            0.0738±0.0046 |   5.467281e-03
+     0.6 | pure_sffa                      |            0.0756±0.0040 |   5.734193e-03
+     0.6 | induced_poly_lim_r2            |            0.1177±0.0117 |   1.398798e-02
+     0.6 | induced_poly_lim_r3            |            0.1140±0.0110 |   1.309688e-02
+     0.6 | induced_poly_lim_r4            |            0.1140±0.0110 |   1.310073e-02
+     0.6 | induced_poly_lim_r5            |            0.1140±0.0110 |   1.310086e-02
+     0.6 | induced_poly_lim_r6            |            0.1140±0.0110 |   1.310083e-02
+     0.6 | kron_poly_lim_r2               |            0.1086±0.0109 |   1.191133e-02
+     0.6 | kron_poly_lim_r3               |            0.1076±0.0100 |   1.167053e-02
+     0.6 | kron_poly_lim_r4               |            0.1076±0.0100 |   1.167183e-02
+     0.6 | kron_poly_lim_r5               |            0.1076±0.0100 |   1.167186e-02
+     0.6 | kron_poly_lim_r6               |            0.1076±0.0100 |   1.167187e-02
+     0.6 | union_poly_lim_r2              |            0.1251±0.0070 |   1.568409e-02
+     0.6 | union_poly_lim_r3              |            0.1251±0.0070 |   1.568460e-02
+     0.6 | union_poly_lim_r4              |            0.1251±0.0070 |   1.568460e-02
+     0.6 | union_poly_lim_r5              |            0.1251±0.0070 |   1.568460e-02
+     0.6 | union_poly_lim_r6              |            0.1251±0.0070 |   1.568460e-02
+     0.7 | subgraph_asymptotic_lmmse      |            0.0396±0.0023 |   1.572983e-03
+     0.7 | numerical_lmmse                |            0.1363±0.0122 |   1.871640e-02
+     0.7 | distance_laplacian_poly        |            0.0927±0.0083 |   8.662563e-03
+     0.7 | random_group_algebra           |            0.0773±0.0158 |   6.200245e-03
+     0.7 | pure_sffa                      |            0.0745±0.0061 |   5.582125e-03
+     0.7 | induced_poly_lim_r2            |            0.1181±0.0196 |   1.430159e-02
+     0.7 | induced_poly_lim_r3            |            0.1160±0.0187 |   1.376752e-02
+     0.7 | induced_poly_lim_r4            |            0.1160±0.0187 |   1.376981e-02
+     0.7 | induced_poly_lim_r5            |            0.1160±0.0187 |   1.376988e-02
+     0.7 | induced_poly_lim_r6            |            0.1160±0.0187 |   1.376988e-02
+     0.7 | kron_poly_lim_r2               |            0.1115±0.0143 |   1.262480e-02
+     0.7 | kron_poly_lim_r3               |            0.1103±0.0139 |   1.234466e-02
+     0.7 | kron_poly_lim_r4               |            0.1103±0.0139 |   1.234445e-02
+     0.7 | kron_poly_lim_r5               |            0.1103±0.0139 |   1.234445e-02
+     0.7 | kron_poly_lim_r6               |            0.1103±0.0139 |   1.234445e-02
+     0.7 | union_poly_lim_r2              |            0.1247±0.0090 |   1.561308e-02
+     0.7 | union_poly_lim_r3              |            0.1247±0.0090 |   1.561200e-02
+     0.7 | union_poly_lim_r4              |            0.1247±0.0090 |   1.561197e-02
+     0.7 | union_poly_lim_r5              |            0.1247±0.0090 |   1.561197e-02
+     0.7 | union_poly_lim_r6              |            0.1247±0.0090 |   1.561197e-02
+
+Saved p-sweep summary CSV to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_summary.csv
+Saved p-sweep summary JSON to: DSSO\outputs\subgraph_reconstruction_rmse_20260628_150334_summary.json

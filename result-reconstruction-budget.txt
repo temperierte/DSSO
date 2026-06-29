@@ -1,0 +1,2260 @@
+================================================================================
+Budget analysis: p=0.5, k=2, r=2, budget=6
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=2, r=2, basis_size=7, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 2
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=   7 | train missing MSE=1.176870e-02 | ||F||_F=1.892832e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=2, r=2)  |              0.1179±0.0170 |               1.415693e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=3, r=2, budget=12
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=3, r=2, basis_size=13, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 3
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  13 | train missing MSE=1.083184e-02 | ||F||_F=2.126314e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=3, r=2)  |              0.1077±0.0122 |               1.173878e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=4, r=2, budget=20
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=4, r=2, basis_size=21, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 4
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  21 | train missing MSE=1.025789e-02 | ||F||_F=2.316134e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=4, r=2)  |              0.1018±0.0103 |               1.046717e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=5, r=2, budget=30
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=5, r=2, basis_size=31, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 5
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  31 | train missing MSE=9.905063e-03 | ||F||_F=2.217721e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=5, r=2)  |              0.0965±0.0076 |               9.360657e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=6, r=2, budget=42
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=6, r=2, basis_size=43, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 6
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  43 | train missing MSE=8.071645e-03 | ||F||_F=2.886855e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=6, r=2)  |              0.0917±0.0075 |               8.457052e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=7, r=2, budget=56
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=7, r=2, basis_size=57, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 7
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  57 | train missing MSE=7.309220e-03 | ||F||_F=2.991045e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=7, r=2)  |              0.0881±0.0070 |               7.802798e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=8, r=2, budget=72
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=8, r=2, basis_size=73, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 8
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  73 | train missing MSE=6.947263e-03 | ||F||_F=3.035735e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=8, r=2)  |              0.0855±0.0059 |               7.337764e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=9, r=2, budget=90
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=9, r=2, basis_size=91, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 9
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  91 | train missing MSE=6.638630e-03 | ||F||_F=3.039779e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=9, r=2)  |              0.0839±0.0058 |               7.077014e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=10, r=2, budget=110
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=10, r=2, basis_size=111, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 10
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params= 111 | train missing MSE=6.237301e-03 | ||F||_F=2.979831e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=10, r=2) |              0.0826±0.0058 |               6.852463e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=11, r=2, budget=132
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=11, r=2, basis_size=133, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 11
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params= 133 | train missing MSE=6.056773e-03 | ||F||_F=3.103639e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=11, r=2) |              0.0816±0.0054 |               6.677950e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=12, r=2, budget=156
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=12, r=2, basis_size=157, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 12
+auto_budget_k           : False
+sffa_word_len           : 2
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params= 157 | train missing MSE=5.817722e-03 | ||F||_F=3.251646e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=12, r=2) |              0.0809±0.0054 |               6.563447e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=2, r=3, budget=14
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=2, r=3, basis_size=15, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 2
+auto_budget_k           : False
+sffa_word_len           : 3
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  15 | train missing MSE=1.044672e-02 | ||F||_F=2.224417e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=2, r=3)  |              0.1059±0.0122 |               1.134248e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=3, r=3, budget=39
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=3, r=3, basis_size=40, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 3
+auto_budget_k           : False
+sffa_word_len           : 3
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  40 | train missing MSE=8.982317e-03 | ||F||_F=2.540756e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=3, r=3)  |              0.0956±0.0084 |               9.207598e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=4, r=3, budget=84
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=4, r=3, basis_size=85, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 4
+auto_budget_k           : False
+sffa_word_len           : 3
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  85 | train missing MSE=8.059003e-03 | ||F||_F=2.376734e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=4, r=3)  |              0.0898±0.0080 |               8.127693e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=5, r=3, budget=155
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=5, r=3, basis_size=156, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 5
+auto_budget_k           : False
+sffa_word_len           : 3
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params= 156 | train missing MSE=7.429640e-03 | ||F||_F=2.915357e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=5, r=3)  |              0.0864±0.0057 |               7.499305e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=2, r=4, budget=30
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=2, r=4, basis_size=31, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 2
+auto_budget_k           : False
+sffa_word_len           : 4
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  31 | train missing MSE=1.047852e-02 | ||F||_F=2.215892e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=2, r=4)  |              0.1057±0.0119 |               1.129243e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=3, r=4, budget=120
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=3, r=4, basis_size=121, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 3
+auto_budget_k           : False
+sffa_word_len           : 4
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params= 121 | train missing MSE=8.980776e-03 | ||F||_F=2.488054e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=3, r=4)  |              0.0954±0.0088 |               9.168030e-03
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=2, r=5, budget=62
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=2, r=5, basis_size=63, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 2
+auto_budget_k           : False
+sffa_word_len           : 5
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params=  63 | train missing MSE=1.047674e-02 | ||F||_F=2.213870e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=2, r=5)  |              0.1056±0.0118 |               1.126806e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
+
+================================================================================
+Budget analysis: p=0.5, k=2, r=6, budget=126
+================================================================================
+
+===== p sweep 1/1: p=0.5, p1=0.1, runs=10 =====
+[graph] unweighted undirected edges=1000/50721
+Spectral preprocessing
+----------------------
+GFT operator             : symmetric normalized Laplacian
+mode                     : topk
+selection                : first k=250 eigenvectors with smallest eigenvalues
+eigenvalues kept/total   : 250 / 319
+largest kept eigenvalue  : 1.293425e+00
+nonzero kept components  : 250
+nonzero removed comps    : 69
+kept spectral energy     : 5.884114e+05 (97.175733%)
+removed spectral energy  : 1.710129e+04 (2.824267%)
+lambda min/max           : -8.571254e-17 / 1.532035e+00
+
+Graph signal data loaded
+------------------------
+data dir               : DSSO\windmill_processed
+adjacency file         : DSSO\windmill_processed\A.npy
+signal file            : DSSO\windmill_processed\X_clean.npy
+A graph shape          : (319, 319)  (N x N, unweighted)
+signal shape           : (17472, 319)  (T x N)
+train/test split       : (200, 319) / (200, 319)
+split mode             : number
+train split mode       : absolute train_size=200
+test split mode        : absolute test_size=200
+used/dropped time pts  : 400 / 17072
+asymptotic oracle pts  : 17472
+normalization mode     : none; preprocessed by L_sym GFT top-k k=250
+X_train mean/std       : 0.223480 / 0.234853
+X_test mean/std        : 0.208298 / 0.211871
+X_asym mean/std        : 0.227789 / 0.231698
+
+SFL Laplacian primitive mode: combinatorial
+
+[p=0.5 | run 1/10] seed=1
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 2/10] seed=2
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 3/10] seed=3
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 4/10] seed=4
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 5/10] seed=5
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 6/10] seed=6
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 7/10] seed=7
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 8/10] seed=8
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 9/10] seed=9
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+[p=0.5 | run 10/10] seed=10
+[SFFA guard] pure_sffa: q=2, r=6, basis_size=127, threshold=1000
+Experiment configuration
+------------------------
+seed                    : 1
+device                  : cuda
+data_dir                : windmill_processed
+adjacency_file          : A.npy
+signal_file             : X_clean.npy
+adjacency_key           : 
+signal_key              : 
+split_mode              : number
+train_ratio             : 0.7
+test_ratio              : None
+train_size              : 200
+test_size               : 200
+p_fixed                 : 0.5
+p_values                : 0.5
+p_missing               : 0.1
+methods                 : pure_sffa
+rmax                    : 5
+ridge                   : 1e-06
+spectral_preprocess     : topk
+bandlimit_cutoff        : 1.0
+bandlimit_k             : 250
+normalize_by_all        : False
+normalize_by_train      : False
+use_normalized_laplacian: False
+sffa_distance_k         : 2
+auto_budget_k           : False
+sffa_word_len           : 6
+random_group_ratio      : 0.9
+sffa_grid               : 
+max_sffa_basis_size     : 1000
+save_outputs            : False
+epochs                  : 20
+lr                      : 0.03
+optimizer               : lbfgs
+lbfgs_max_iter          : 50
+num_runs                : 10
+plot_path               : outputs\subgraph_reconstruction_rmse.png
+graph_plot_path         : outputs\graph_subgraph_reconstruction_layout.png
+
+Subgraph reconstruction split
+-----------------------------
+N0                       : 160
+observed nodes in V0     : 128
+missing nodes in V0      : 32
+idx0 first 20            : [0, 2, 6, 7, 9, 11, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 29]
+obs_global first 20      : [0, 2, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 21, 22, 24, 26, 27, 28, 30, 31]
+miss_global first 20     : [11, 29, 33, 34, 42, 68, 76, 106, 122, 138, 161, 192, 199, 200, 205, 206, 214, 221, 229, 230]
+
+Learned SFL operators
+---------------------
+pure_sffa                        | params= 127 | train missing MSE=1.042374e-02 | ||F||_F=2.228146e+00
+
+=== Averaged test RMSE on missing nodes ===
+method                               |                       RMSE |                        MSE
+----------------------------------------------------------------------------------------------
+Pure distance-based SFFA (k=2, r=6)  |              0.1057±0.0120 |               1.129508e-02
+Skipped saving plots and JSON because --no-save_outputs was set.
